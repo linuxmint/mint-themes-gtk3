@@ -1,17 +1,17 @@
 #!/bin/bash
 
 # Old way (brutal)
-#sudo rm -rf /usr/share/themes/Mint-*
+#sudo rm -rf /usr/share/themes/Mint-X/gtk-3.0*
 #sudo cp -R usr /
 
 # New way
-echo "Bind mounting the theme to /usr/share/themes/Mint-X..."
+echo "Bind mounting the theme to /usr/share/themes/Mint-X/gtk-3.0..."
 
-sudo mount --bind usr/share/themes/Mint-X /usr/share/themes/Mint-X
+sudo mount --bind usr/share/themes/Mint-X/gtk-3.0 /usr/share/themes/Mint-X/gtk-3.0
 
 read -p "Theme active. Press any key to revert..."
 
-sudo umount /usr/share/themes/Mint-X
+sudo umount /usr/share/themes/Mint-X/gtk-3.0
 
 echo "Theme deactivated. Reload applications to take effect."
 exit 0

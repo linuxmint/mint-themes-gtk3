@@ -46,8 +46,8 @@ install: build
 	dh_clean -k 
 	dh_installdirs
 	
-	mkdir -p $(CURDIR)/debian/mint-themes
-	cp -r $(CURDIR)/usr $(CURDIR)/debian/mint-themes/
+	mkdir -p $(CURDIR)/debian/mint-themes-gtk3
+	cp -r $(CURDIR)/usr $(CURDIR)/debian/mint-themes-gtk3/
 	
 # Build architecture-independent files here.
 binary-indep: build install
