@@ -57,7 +57,6 @@
     -GtkWidget-separator-height: 1;
     -GtkWidget-separator-width: 1;
     -GtkWidget-visited-link-color: @link_color;
-    -GtkWidget-wide-separators: true;
     -GtkWindow-resize-grip-height: 13;
     -GtkWindow-resize-grip-width: 13;
     -WnckTasklist-fade-overlay-rect: 0;
@@ -1427,11 +1426,9 @@ GtkScrolledWindow.frame {
 }
 
 .menuitem.separator {
-    -GtkMenuItem-horizontal-padding: 0;
-    -GtkWidget-separator-height: 1;
-
-    color: @theme_bg_color;
-    border-color: @theme_bg_color;
+    -GtkMenuItem-horizontal-padding: 0;    
+    border: none;
+    color: @theme_bg_color;    
 }
 
 GtkComboBox .separator {
