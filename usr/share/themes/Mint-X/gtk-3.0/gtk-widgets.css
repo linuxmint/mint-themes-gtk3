@@ -848,9 +848,11 @@ GtkComboBox .menu {
 .toolbar .primary-toolbar .menu,
 .menu {
     background-color: shade(@theme_bg_color, 1.18);
-    border-width: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: @theme_bg_color;
     border-radius: 0;
-    padding: 0;
+    padding: 1px;
     color: @theme_fg_color;
 }
 
