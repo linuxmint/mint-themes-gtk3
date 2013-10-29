@@ -1000,7 +1000,7 @@ GtkTreeMenu .menuitem * {
  * notebook *
  ************/
 .notebook {
-    background-color: shade(@theme_bg_color, 1.05);
+    background-color: @theme_bg_color;
     background-image: none;
     border-radius: 3px;
     border-style: solid;
@@ -1015,7 +1015,7 @@ GtkTreeMenu .menuitem * {
 }
 
 .notebook tab:active {
-    background-color: shade(@theme_bg_color, 1.05);
+    background-color: @theme_bg_color;
     border-color: shade(@theme_bg_color, 0.8);
 }
 
