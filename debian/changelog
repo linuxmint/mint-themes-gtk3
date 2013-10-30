@@ -1,3 +1,9 @@
+mint-themes-gtk3 (3.8-5) petra; urgency=low
+
+  * Don't highlight checkboxes and radiobuttons on hover/active
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 30 Oct 2013 11:22:26 +0000
+
 mint-themes-gtk3 (3.8-4) petra; urgency=low
 
   * Fixed widget backgrounds in notebooks in cinnamon-settings
