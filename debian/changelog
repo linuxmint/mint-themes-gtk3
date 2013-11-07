@@ -1,3 +1,9 @@
+mint-themes-gtk3 (3.8-6) petra; urgency=low
+
+  * GTK2 buttons
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 07 Nov 2013 16:25:23 +0000
+
 mint-themes-gtk3 (3.8-5) petra; urgency=low
 
   * Don't highlight checkboxes and radiobuttons on hover/active
