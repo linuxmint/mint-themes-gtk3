@@ -1452,6 +1452,7 @@ GtkComboBox .separator {
 }
 
 .spinbutton.button {
+    padding: 2px 4px;
     background-image: -gtk-gradient(linear, left top, left bottom,
                                      from (shade(shade(@theme_bg_color, 1.02), 1.05)),
                                      to (shade(shade(@theme_bg_color, 1.02), 0.97)));
