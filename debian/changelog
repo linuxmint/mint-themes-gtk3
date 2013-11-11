@@ -1,3 +1,9 @@
+mint-themes-gtk3 (3.8-8) petra; urgency=low
+
+  * Improvements from JosephM (spin buttons, buttons, toolbars..)
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 11 Nov 2013 14:21:44 +0000
+
 mint-themes-gtk3 (3.8-7) petra; urgency=low
 
   * Removed green shade on default buttons
