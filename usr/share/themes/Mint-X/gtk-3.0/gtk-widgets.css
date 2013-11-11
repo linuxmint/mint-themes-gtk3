@@ -288,19 +288,22 @@ GtkSwitch.slider,
 
 .button.default {
     background-image: -gtk-gradient(linear, left top, left bottom,
-        from (shade(mix(@theme_bg_color, @theme_bg_color, 0.3), 1.3)),
-        to (shade(mix(@theme_bg_color, @theme_bg_color, 0.3), 0.92)));
-    border-color: @theme_selected_bg_color;
+        from (shade(mix(@theme_bg_color, @theme_selected_bg_color, 0.3), 1.3)),
+        to (shade(mix(@theme_bg_color, @theme_selected_bg_color, 0.3), 0.92)));
+    border-color: shade(@theme_bg_color, 0.65);
 }
 
-.button.default:hover {
-
+.button.default:hover,
+.button.default:active:hover {
+    background-image: -gtk-gradient(linear, left top, left bottom,
+        from (shade(mix(@theme_bg_color, @theme_selected_bg_color, 0.3), 1.3)),
+        to (shade(mix(@theme_bg_color, @theme_selected_bg_color, 0.3), 0.80)));
 }
 
 .button.default:active {
-}
-
-.button.default:active:hover {
+    background-image: -gtk-gradient(linear, left top, left bottom,
+                                     from (shade(shade(@theme_bg_color, 0.8), 1.3)),
+                                     to (shade(shade(@theme_bg_color, 0.8), 0.92)));
 }
 
 /* middle button */
