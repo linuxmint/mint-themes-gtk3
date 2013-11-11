@@ -51,7 +51,7 @@
     -GtkToolItemGroup-expander-size: 11;
     -GtkTreeView-expander-size: 11;
     -GtkTreeView-vertical-separator: 0;
-    -GtkWidget-focus-line-width: 1;
+    -GtkWidget-focus-line-width: 0;
     -GtkWidget-focus-padding: 0;
     -GtkWidget-link-color: @link_color;
     -GtkWidget-separator-height: 1;
