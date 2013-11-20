@@ -22,3 +22,8 @@ NemoWindow .sidebar .view:hover {
 .nemo-inactive-pane .view:selected {
     background-color: @theme_selected_bg_color;
 }
+
+/* Adjust size of small nemo status bar buttons */
+NemoWindow .toolbar .button {
+    padding: 2px 4px;
+}
