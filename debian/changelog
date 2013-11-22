@@ -1,3 +1,10 @@
+mint-themes-gtk3 (3.8-9) petra; urgency=low
+
+  * JosephM: fix treeview spacing
+  * JosephM: fix the large sizing of nemo status bar button
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 22 Nov 2013 10:05:09 +0000
+
 mint-themes-gtk3 (3.8-8) petra; urgency=low
 
   * Improvements from JosephM (spin buttons, buttons, toolbars..)
