@@ -1773,6 +1773,14 @@ GtkComboBox .separator {
     animation: spinner 1s infinite linear;
 }
 
+/************************
+ * stack/stack switcher *
+ ************************/
+
+GtkStackSwitcher .button:active {
+    font-weight: bold;
+}
+
 /*************
  * statusbar *
  *************/
@@ -1965,6 +1973,4 @@ GtkViewport {
     color: @theme_selected_fg_color;
 }
 
-GtkStackSwitcher .button:active {
-    font-weight: bold;
-}
+
