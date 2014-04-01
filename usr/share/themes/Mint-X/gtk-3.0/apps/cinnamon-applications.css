@@ -136,3 +136,18 @@ NemoWindow .toolbar .button.image-button {
 NemoWindow .primary-toolbar .button {
     padding: 3px;
 }
+
+/*********************
+ * Cinnamon Settings *
+ *********************/
+
+.section-bg {
+    background-color: @notebook_bg;
+}
+
+.section-bg.frame {
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+    border-image: -gtk-scaled(url("../borders/notebook/notebook.png"), url("../borders/notebook/notebook@2.png")) 2 / 2px stretch;
+}
