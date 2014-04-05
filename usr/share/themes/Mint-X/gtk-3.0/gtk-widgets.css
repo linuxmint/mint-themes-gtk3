@@ -954,6 +954,7 @@ GtkMenuButton .menu {
 }
 
 .menu {
+    margin: 4px;
     padding: 0;
     border: 1px solid @border;
     border-radius: 0;
@@ -1530,24 +1531,10 @@ GtkComboBox .separator {
     border-bottom-color: alpha(white, 0.85);
 }
 
-/*.menuitem.separator {
-    -GtkMenuItem-horizontal-padding: 20;
+GtkMenuButton .menuitem.separator {
     -GtkWidget-wide-separators: false;
-    -GtkWidget-separator-height: 1;
-    -GtkWidget-separator-width: 1;
-    
-    padding: 0;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    
-    border-style: solid;
-    border-width: 1px;
-    border-image: none;
-    border-color: transparent;
-    border-bottom-color: white;
-    
-    color: alpha(black, 0.08);    
-}*/
+    color: alpha(black, 0.8);
+}
 
 .primary-toolbar GtkSeparatorToolItem,
 .primary-toolbar .separator {
