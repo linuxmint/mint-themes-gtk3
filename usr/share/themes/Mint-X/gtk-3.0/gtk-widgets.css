@@ -645,7 +645,7 @@ GtkDrawingArea {
 .floating-bar .button {
     -GtkButton-image-spacing: 0;
     -GtkButton-inner-border: 0;
-    border: none;
+    border: 1px solid @border;
     background-color: transparent;
     background-image: none;
 }
