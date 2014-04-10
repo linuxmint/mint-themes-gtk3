@@ -1,3 +1,9 @@
+mint-themes-gtk3 (3.10-1) qiana; urgency=medium
+
+  * Revamp from Joseph
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 10 Apr 2014 11:10:38 +0100
+
 mint-themes-gtk3 (3.8-9) petra; urgency=low
 
   * JosephM: fix treeview spacing
