@@ -15,7 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="tab-top.svg">
+   sodipodi:docname="tab-top.svg"
+   inkscape:export-filename="/home/joseph/.themes/Mint-X2/gtk-3.0/borders/notebook/tab-top@2.png"
+   inkscape:export-xdpi="180"
+   inkscape:export-ydpi="180">
   <defs
      id="defs4">
     <linearGradient
@@ -97,7 +100,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -110,11 +113,6 @@
        style="fill:none;stroke:#a6a6a6;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="M 1.5 30.000001 L 1.5 4.4999826 C 1.5 2.8379826 2.838 1.4999826 4.5 1.4999826 L 4.5 1.4999826 L 25.5 1.4999826 C 27.162 1.4999826 28.5 2.8379826 28.5 4.4999826 L 28.5 30.000001 "
        id="path3804"
-       transform="translate(0,1022.3622)" />
-    <path
-       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:0.30000001;stroke-dasharray:none;stroke-dashoffset:0"
-       d="M 2.5 30.008527 L 2.5 4.4285715 C 2.5 3.3601333 3.365121 2.4999826 4.4397333 2.4999826 L 4.4397333 2.4999826 L 25.560267 2.4999826 C 26.634879 2.4999826 27.5 3.3601333 27.5 4.4285715 L 27.5 30.008527 "
-       id="path3816"
        transform="translate(0,1022.3622)" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.99999994000000003;stroke-opacity:0.05000000000000000"
