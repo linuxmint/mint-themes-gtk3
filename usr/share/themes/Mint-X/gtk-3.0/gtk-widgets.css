@@ -1332,31 +1332,17 @@ GtkProgressBar {
  *********/
 
 .scale {
-    -GtkRange-slider-width: 15;
-    -GtkScale-slider-length: 15;
+    -GtkRange-slider-width: 19;
+    -GtkScale-slider-length: 19;
     -GtkRange-trough-border: 0;
 }
 
-.scale.slider {
-    border: 1px solid shade(@border, 0.9);
-    border-radius: 7px;
-    background-image: linear-gradient(to bottom,
-                            @scale_slider_a,
-                            @scale_slider_b);
-    color: transparent;
-}
-
-.scale.slider:hover {
-    background-image: linear-gradient(to bottom,
-                            @scale_slider_hover_a,
-                            @scale_slider_hover_b);
-}
-
+.scale.slider,
+.scale.slider:hover,
 .scale.slider:insensitive {
-    border-color: shade(@theme_bg_color, 0.8);
-    background-image: linear-gradient(to bottom,
-                            @scale_slider_insensitive_a,
-                            @scale_slider_insensitive_b);
+    border-style: none;
+    border-radius: 0;
+    background-color: transparent;
 }
 
 .scale.slider.fine-tune:active,
@@ -1366,11 +1352,11 @@ GtkProgressBar {
 }
 
 .scale.trough {
-    margin: 4px 0;
+    margin: 6px 3px;
 }
 
 .scale.trough.vertical {
-    margin: 0 4px;
+    margin: 3px 6px;
 }
 
 .scale.trough {
