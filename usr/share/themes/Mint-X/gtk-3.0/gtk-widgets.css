@@ -1433,10 +1433,10 @@ GtkProgressBar {
  *************/
 
 .scrollbar {
-    -GtkRange-trough-border: 0;
+    -GtkRange-trough-border: 2;
     -GtkScrollbar-has-backward-stepper: 0;
     -GtkScrollbar-has-forward-stepper: 0;
-    -GtkRange-slider-width: 12;
+    -GtkRange-slider-width: 10;
     -GtkScrollbar-min-slider-length: 30;
     -GtkRange-stepper-spacing: 0;
     -GtkRange-trough-under-steppers: 1;
@@ -1449,8 +1449,18 @@ GtkProgressBar {
     border-color: alpha(@border, 0.5);
 }
 
+.scrollbar.trough,
+.scrollbar.trough.vertical {
+    background-image: linear-gradient(to right,
+                            @theme_bg_color,
+                            @theme_base_color);
+}
+
 .scrollbar.trough.horizontal {
     border-width: 1px 0 0 0;
+    background-image: linear-gradient(to bottom,
+                            @theme_bg_color,
+                            @theme_base_color);
 }
 
 .scrollbar.slider,
@@ -1459,27 +1469,29 @@ GtkProgressBar {
     border-radius: 20px;
     background-color: transparent;
     background-image: linear-gradient(to right,
-                            shade(@theme_bg_color, 1.05),
-                            shade(@theme_bg_color, 0.98));
+                            shade(@theme_bg_color, 1.12),
+                            shade(@theme_bg_color, 0.95));
     box-shadow: 1px 0 alpha(white, 0.5);
 }
 
 .scrollbar.slider.vertical:hover {
     background-image: linear-gradient(to right,
                             shade(@theme_bg_color, 1.0),
-                            shade(@theme_bg_color, 0.93));    
+                            shade(@theme_bg_color, 0.88));
+    box-shadow: 1px 0 alpha(white, 0.3);
 }
 
 .scrollbar.slider.horizontal {
     background-image: linear-gradient(to bottom,
-                            shade(@theme_bg_color, 1.05),
-                            shade(@theme_bg_color, 0.98));
+                            shade(@theme_bg_color, 1.12),
+                            shade(@theme_bg_color, 0.95));
 }
 
 .scrollbar.slider.horizontal:hover {
     background-image: linear-gradient(to bottom,
                             shade(@theme_bg_color, 1.0),
-                            shade(@theme_bg_color, 0.93));
+                            shade(@theme_bg_color, 0.88));
+        box-shadow: 1px 0 alpha(white, 0.3);
 }
 
 /*************
