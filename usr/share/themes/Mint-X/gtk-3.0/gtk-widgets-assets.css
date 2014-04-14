@@ -113,36 +113,6 @@
     background-image: -gtk-scaled(url("assets/menuitem-radio-checked-insensitive.png"), url("assets/menuitem-radio-checked-insensitive@2.png"));
 }
 
-/*******************
- * GtkScale Slider *
- *******************/
-
-.scale.slider {
-    background-image: -gtk-scaled(url("assets/scale-slider-vertical.png"), url("assets/scale-slider-vertical@2.png"));
-}
-
-.scale.slider.horizontal {
-    background-image: -gtk-scaled(url("assets/scale-slider-horizontal.png"), url("assets/scale-slider-horizontal@2.png"));
-}
-
-.scale.slider:hover {
-    background-image: -gtk-scaled(url("assets/scale-slider-vertical-hover.png"), url("assets/scale-slider-vertical-hover@2.png"));
-}
-
-.scale.slider.horizontal:hover {
-    background-image: -gtk-scaled(url("assets/scale-slider-horizontal-hover.png"), url("assets/scale-slider-horizontal-hover@2.png"));
-}
-
-.scale.slider:insensitive,
-.scale.slider:insensitive:hover {
-    background-image: -gtk-scaled(url("assets/scale-slider-vertical-insensitive.png"), url("assets/scale-slider-vertical-insensitive@2.png"));
-}
-
-.scale.slider.horizontal:insensitive,
-.scale.slider.horizontal:insensitive:hover {
-    background-image: -gtk-scaled(url("assets/scale-slider-horizontal-insensitive.png"), url("assets/scale-slider-horizontal-insensitive@2.png"));
-}
-
 /*************
  * GtkSwitch *
  *************/
