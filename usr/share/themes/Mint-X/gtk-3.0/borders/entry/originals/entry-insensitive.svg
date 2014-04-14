@@ -15,7 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="entry.svg">
+   sodipodi:docname="entry.svg"
+   inkscape:export-filename="/home/joseph/.themes/spinbutton/gtk-3.0/borders/entry/entry@2.png"
+   inkscape:export-xdpi="180"
+   inkscape:export-ydpi="180">
   <defs
      id="defs4">
     <linearGradient
@@ -100,7 +103,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="31.678384"
-     inkscape:cx="7.9538483"
+     inkscape:cx="2.6821147"
      inkscape:cy="8.7600042"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -108,8 +111,8 @@
      inkscape:snap-global="true"
      inkscape:window-width="1212"
      inkscape:window-height="847"
-     inkscape:window-x="401"
-     inkscape:window-y="152"
+     inkscape:window-x="111"
+     inkscape:window-y="68"
      inkscape:window-maximized="0"
      inkscape:snap-bbox="true">
     <inkscape:grid
@@ -128,7 +131,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -147,7 +150,7 @@
        rx="3"
        ry="3" />
     <rect
-       style="fill:none;stroke:#999999;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:none;stroke:#b0b0b0;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="rect3755"
        width="13"
        height="12.999965"
