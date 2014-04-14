@@ -1338,7 +1338,7 @@ GtkProgressBar {
 }
 
 .scale.slider {
-    border: 1px solid shade(@border, 0.9);
+    border: 1px solid alpha(@border, 0.9);
     border-radius: 7px;
     background-image: linear-gradient(to bottom,
                             @scale_slider_a,

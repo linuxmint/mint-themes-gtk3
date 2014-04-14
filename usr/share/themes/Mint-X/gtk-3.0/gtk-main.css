@@ -71,10 +71,10 @@
 
 /* Scale */
 
-@define-color scale_slider_a shade(@theme_bg_color, 1.4);
-@define-color scale_slider_b shade(@theme_bg_color, 1.24);
-@define-color scale_slider_hover_a shade(@theme_bg_color, 1.2);
-@define-color scale_slider_hover_b shade(@theme_bg_color, 1.04);
+@define-color scale_slider_a shade(@theme_bg_color, 1.2);
+@define-color scale_slider_b shade(@theme_bg_color, 1.05);
+@define-color scale_slider_hover_a shade(@theme_bg_color, 1.15);
+@define-color scale_slider_hover_b shade(@theme_bg_color, 0.95);
 @define-color scale_slider_insensitive_a shade(@theme_bg_color, 1.05);
 @define-color scale_slider_insensitive_b shade(@theme_bg_color, 0.9);
 @define-color scale_trough_a shade(@theme_bg_color, 0.8);
