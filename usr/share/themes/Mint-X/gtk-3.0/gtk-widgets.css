@@ -72,10 +72,6 @@
     -gtk-image-effect: dim;
 }
 
-*:hover {
-    -gtk-image-effect: highlight;
-}
-
 /*************
  * assistant *
  *************/
@@ -1065,21 +1061,8 @@ GtkTreeMenu .menuitem,
     color: @theme_selected_fg_color;
 }
 
-.menu .menuitem *:insensitive {
+.menu .menuitem:insensitive {
     color: mix(@menu_fg, @menu_bg, 0.6);
-}
-
-.menuitem .accelerator:insensitive {
-    color: mix(@menu_fg, @menu_bg, 0.7);
-}
-
-.menuitem .accelerator {
-    color: alpha(@menu_fg, 0.7);
-}
-
-.menuitem .accelerator:hover,
-.menuitem .accelerator:active {
-    color: @theme_selected_fg_color;
 }
 
 GtkModelMenuItem GtkBox GtkImage {
@@ -1521,17 +1504,13 @@ GtkComboBox .separator {
 }
 
 
-.menuitem.separator {
+.menuitem.separator,
+GtkMenuButton .menuitem.separator {
     -GtkWidget-wide-separators: true;
     -GtkWidget-separator-height: 2;
     border: 1px solid transparent;
     border-top-color: alpha(black, 0.08);
     border-bottom-color: alpha(white, 0.85);
-}
-
-GtkMenuButton .menuitem.separator {
-    -GtkWidget-wide-separators: false;
-    color: alpha(black, 0.8);
 }
 
 .primary-toolbar GtkSeparatorToolItem,
