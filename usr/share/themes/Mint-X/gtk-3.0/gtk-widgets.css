@@ -521,7 +521,7 @@ GtkDrawingArea {
  *********/
 
 .entry {
-    padding: 3px 5px 3px 5px;
+    padding: 4px 5px 4px 5px;
     color: @theme_text_color;
 }
 

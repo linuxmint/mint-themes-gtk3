@@ -136,14 +136,14 @@ column-header:last-child .button:active:hover {
 .entry,
 GtkComboBox.combobox-entry .button {
     border-style: solid;
-    border-width: 1px 1px 2px 1px;
+    border-width: 2px;
     border-radius: 3px;
     border-color: transparent;
-    border-image: -gtk-scaled(url("borders/entry/entry.png"), url("borders/entry/entry@2.png")) 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-image: -gtk-scaled(url("borders/entry/entry.png"), url("borders/entry/entry@2.png")) 4 / 4px stretch;
 }
 
 .entry:insensitive {
-    border-image: -gtk-scaled(url("borders/entry/entry-insensitive.png"), url("borders/entry/entry-insensitive@2.png")) 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-image: -gtk-scaled(url("borders/entry/entry-insensitive.png"), url("borders/entry/entry-insensitive@2.png")) 4 / 4px stretch;
 }
 
 /************
