@@ -1782,31 +1782,28 @@ GtkStatusbar {
  **********/
 
 GtkSwitch {
-    border-radius: 8px;
-    padding: 2px;
-    background-color: transparent;
+    font: bold condensed 9;
 }
 
-GtkSwitch.trough,
-GtkSwitch.trough:insensitive {
-    border: none;
-    border-image: none;
-    color: transparent;
-    box-shadow: none;
-    background-color: transparent;
-    background-size: 64px 26px;
-    background-position: center center;
-    background-repeat: no-repeat;
+GtkSwitch.trough {
+    padding: 1px;
+    color: @button_fg;
+    text-shadow: 0 1px @button_text_shadow;
+}
+
+GtkSwitch.trough:active {
+    color: @theme_selected_fg_color;
+    text-shadow: 1px 1px alpha(black, 0.2);
+}
+
+GtkSwitch.trough:insensitive,
+GtkSwitch.trough:insensitive:active {
+    color: @insensitive_fg_color;
     text-shadow: none;
 }
 
 GtkSwitch.slider {
-    border: none;
-    border-color: transparent;
-    border-image: none;
-   
-    background-color: transparent;
-    background-image: none;
+    padding: 1px;
 }
 
 /*******************
