@@ -143,11 +143,13 @@ NemoWindow .primary-toolbar .button {
 
 .section-bg {
     background-color: @notebook_bg;
-}
-
-.section-bg.frame {
-    border-style: solid;
-    border-width: 2px;
-    border-color: transparent;
-    border-image: -gtk-scaled(url("../borders/notebook/notebook.png"), url("../borders/notebook/notebook@2.png")) 2 / 2px stretch;
+    box-shadow: inset 0 3px white,
+                inset -2px 0 @border,
+                inset 0 -2px @border,
+                inset 0 2px shade(@border, 1.15),
+                inset 2px 0 @border,
+                inset -1px 0 shade(@theme_bg_color, 0.93),
+                inset 1px 0 shade(@theme_bg_color, 0.93),
+                inset 0 1px @theme_bg_color,
+                inset 0 -1px shade(@theme_bg_color, 0.85);
 }
