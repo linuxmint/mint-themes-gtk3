@@ -60,6 +60,22 @@ NemoWindow > GtkGrid > .pane-separator {
     background-color: transparent;
 }
 
+.nemo-canvas-item {
+    border-radius: 3px;
+}
+
+.nemo-desktop.nemo-canvas-item {
+    color: @desktop_item_fg;
+    text-shadow: 1px 1px @desktop_item_text_shadow;
+}
+
+.nemo-desktop.nemo-canvas-item:selected {
+    background-color: alpha(@theme_selected_bg_color, 0.8);
+    background-image: none;
+    color: @theme_selected_fg_color;
+    text-shadow: none;
+}
+
 /* notebook */
 
 NemoView.frame,
