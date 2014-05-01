@@ -113,26 +113,6 @@
     background-image: -gtk-scaled(url("assets/menuitem-radio-checked-insensitive.png"), url("assets/menuitem-radio-checked-insensitive@2.png"));
 }
 
-/*************
- * GtkSwitch *
- *************/
-
-GtkSwitch.trough {
-    background-image: -gtk-scaled(url("assets/switch-off.png"), url("assets/switch-off@2.png"));
-}
-
-GtkSwitch.trough:active {
-    background-image: -gtk-scaled(url("assets/switch-on.png"), url("assets/switch-on@2.png"));
-}
-
-GtkSwitch.trough:insensitive {
-    background-image: -gtk-scaled(url("assets/switch-off-insensitive.png"), url("assets/switch-off-insensitive@2.png"));
-}
-
-GtkSwitch.trough:active:insensitive {
-    background-image: -gtk-scaled(url("assets/switch-on-insensitive.png"), url("assets/switch-on-insensitive@2.png"));
-}
-
 /******************
  * pane separator *
  ******************/
