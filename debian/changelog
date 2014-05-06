@@ -1,3 +1,9 @@
+mint-themes-gtk3 (3.10-4) qiana; urgency=medium
+
+  * Fixes on gtk switch
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 06 May 2014 16:25:37 +0100
+
 mint-themes-gtk3 (3.10-3) qiana; urgency=medium
 
   * Fixes from Joseph
