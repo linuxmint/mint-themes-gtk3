@@ -1836,6 +1836,7 @@ GtkTextView {
 .toolbar {
     padding: 6px;
     border-style: none;
+    background-color: @theme_bg_color;
 }
 
 .toolbar.menubar {
