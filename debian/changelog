@@ -1,3 +1,9 @@
+mint-themes-gtk3 (3.10-5) qiana; urgency=medium
+
+  * fix black bg in evolution
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 21 May 2014 11:15:49 +0100
+
 mint-themes-gtk3 (3.10-4) qiana; urgency=medium
 
   * Fixes on gtk switch
