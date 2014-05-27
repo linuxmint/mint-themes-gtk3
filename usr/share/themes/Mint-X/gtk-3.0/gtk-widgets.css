@@ -1433,7 +1433,7 @@ GtkProgressBar {
     -GtkRange-trough-border: 2;
     -GtkScrollbar-has-backward-stepper: 0;
     -GtkScrollbar-has-forward-stepper: 0;
-    -GtkRange-slider-width: 10;
+    -GtkRange-slider-width: 12;
     -GtkScrollbar-min-slider-length: 30;
     -GtkRange-stepper-spacing: 0;
     -GtkRange-trough-under-steppers: 1;
