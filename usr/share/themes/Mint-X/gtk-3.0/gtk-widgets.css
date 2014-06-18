@@ -1321,31 +1321,21 @@ GtkProgressBar {
 }
 
 .scale.slider {
-    border: 1px solid alpha(@border, 0.9);
-    border-radius: 7px;
-    background-image: linear-gradient(to bottom,
-                            @scale_slider_a,
-                            @scale_slider_b);
+    border: none;
+    background-color: transparent;
+    background-size: 15px 15px;
+    background-position: center center;
+    background-repeat: no-repeat;
     color: transparent;
-}
-
-.scale.slider:hover {
-    background-image: linear-gradient(to bottom,
-                            @scale_slider_hover_a,
-                            @scale_slider_hover_b);
-}
-
-.scale.slider:insensitive {
-    border-color: shade(@theme_bg_color, 0.8);
-    background-image: linear-gradient(to bottom,
-                            @scale_slider_insensitive_a,
-                            @scale_slider_insensitive_b);
 }
 
 .scale.slider.fine-tune:active,
 .scale.slider.fine-tune:active:hover,
 .scale.slider.fine-tune.horizontal:active,
 .scale.slider.fine-tune.horizontal:active:hover {
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .scale.trough {
@@ -1489,6 +1479,13 @@ GtkProgressBar {
                             shade(@theme_bg_color, 1.0),
                             shade(@theme_bg_color, 0.88));
         box-shadow: 1px 0 alpha(white, 0.3);
+}
+
+.scrollbar.slider.fine-tune:prelight:active {
+    border: 3px solid transparent;
+    background-color: shade(@theme_bg_color, 0.9);
+    background-image: none;
+    box-shadow: none;
 }
 
 /*************
