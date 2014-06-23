@@ -3,10 +3,6 @@
  **********/
  
 .button,
-.primary-toolbar .button:hover,
-.primary-toolbar .button.raised,
-.primary-toolbar .raised .button,
-.primary-toolbar GtkComboBox .button,
 .inline-toolbar.toolbar .button {
     border-style: solid;
     border-width: 2px;
@@ -20,9 +16,6 @@
 }
 
 .button:active,
-.primary-toolbar .button:active,
-.primary-toolbar .button.raised:active,
-.primary-toolbar .raised .button:active,
 .inline-toolbar.toolbar .button:active {
     border-style: solid;
     border-width: 2px;
@@ -36,9 +29,6 @@
 }
 
 .button:insensitive,
-.primary-toolbar .button.raised:insensitive,
-.primary-toolbar .raised .button:insensitive,
-.primary-toolbar GtkComboBox .button:insensitive,
 .inline-toolbar.toolbar .button:insensitive {
     border-style: solid;
     border-width: 2px;
@@ -52,9 +42,6 @@
 }
 
 .button:insensitive:active,
-.primary-toolbar .button:insensitive:active,
-.primary-toolbar .button.raised:insensitive:active,
-.primary-toolbar .raised .button:insensitive:active,
 .inline-toolbar.toolbar .button:insensitive:active {
     border-style: solid;
     border-width: 2px;
@@ -91,6 +78,55 @@
                 inset 0 -1px alpha(black, 0.06);
 }
 
+/**************************
+* Primary toolbar buttons *
+**************************/
+
+.primary-toolbar .button.raised,
+.primary-toolbar .button.raised:hover,
+.primary-toolbar .raised .button,
+.primary-toolbar .raised .button:hover,
+.primary-toolbar GtkComboBox .button {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: transparent;
+    border-image: -gtk-scaled(url("borders/button/raised-button.png"), url("borders/button/raised-button@2.png")) 4 / 4px stretch;
+    box-shadow: inset 0 1px alpha(white, 1.0),
+                inset 1px 0 alpha(white, 0.2),
+                inset -1px 0 alpha(white, 0.2),
+                inset 0 -1px alpha(white, 0.1);
+}
+
+.primary-toolbar .button:active,
+.primary-toolbar .button:active:hover,
+.primary-toolbar .button.raised:active,
+.primary-toolbar .raised .button:active {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: transparent;
+    border-image: -gtk-scaled(url("borders/button/button-active.png"), url("borders/button/button-active@2.png")) 4 / 4px stretch;
+    box-shadow: inset 0 1px alpha(black, 0.1),
+                inset 1px 0 alpha(black, 0.08),
+                inset -1px 0 alpha(black, 0.08),
+                inset 0 -1px alpha(black, 0.06);
+}
+
+.primary-toolbar .button.raised:insensitive,
+.primary-toolbar .raised .button:insensitive,
+.primary-toolbar GtkComboBox .button:insensitive {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: transparent;
+    border-image: -gtk-scaled(url("borders/button/button-insensitive.png"), url("borders/button/button-insensitive@2.png")) 4 / 4px stretch;
+    box-shadow: inset 0 1px alpha(white, 0.3),
+                inset 1px 0 alpha(white, 0.15),
+                inset -1px 0 alpha(white, 0.15),
+                inset 0 -1px alpha(white, 0.06);
+}
+
 .primary-toolbar .button,
 .primary-toolbar .button:insensitive {
     border-style: solid;
@@ -99,6 +135,32 @@
     border-color: transparent;
     border-image: none;
     box-shadow: none;
+}
+
+.primary-toolbar .button:hover {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: transparent;
+    border-image: -gtk-scaled(url("borders/button/button.png"), url("borders/button/button@2.png")) 4 / 4px stretch;
+    box-shadow: inset 0 1px alpha(white, 1.0),
+                inset 1px 0 alpha(white, 0.5),
+                inset -1px 0 alpha(white, 0.5),
+                inset 0 -1px alpha(white, 0.1);
+}
+
+.primary-toolbar .button:insensitive:active,
+.primary-toolbar .button.raised:insensitive:active,
+.primary-toolbar .raised .button:insensitive:active {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: transparent;
+    border-image: -gtk-scaled(url("borders/button/button-active-insensitive.png"), url("borders/button/button-active-insensitive@2.png")) 4 / 4px stretch;
+    box-shadow: inset 0 1px alpha(black, 0.05),
+                inset 1px 0 alpha(black, 0.02),
+                inset -1px 0 alpha(black, 0.02),
+                inset 0 -1px alpha(black, 0.01);
 }
 
 /*****************
@@ -330,10 +392,10 @@ GtkSwitch.slider:insensitive {
 	border-image-width: 4px 0 4px 0;
 	border-radius: 0;
 	
-	box-shadow: inset 0 1px white,
-	            inset 0 -1px alpha(white, 0.1),
+    box-shadow: inset 0 1px white,
+                inset 0 -1px alpha(white, 0.1),
                 inset -1px 0 alpha(black, 0.2),
-                inset 1px 0 alpha(white, 0.7);
+                inset 1px 0 alpha(white, 0.2);
 }
 
 /* Leftmost button */
@@ -365,9 +427,9 @@ GtkSwitch.slider:insensitive {
 	border-bottom-right-radius: 0;
 	border-top-right-radius: 0;
 	
-	box-shadow: inset 0 1px white,
+    box-shadow: inset 0 1px white,
                 inset 0 -1px alpha(white, 0.1),
-                inset 1px 0 alpha(white, 0.5),
+                inset 1px 0 alpha(white, 0.2),
                 inset -1px 0 alpha(black, 0.2);
 }
 
@@ -400,10 +462,10 @@ GtkSwitch.slider:insensitive {
 	border-bottom-left-radius: 0;
 	border-top-left-radius: 0;
 	
-	box-shadow: inset 0 1px white,
+    box-shadow: inset 0 1px white,
                 inset 0 -1px alpha(white, 0.1),
-                inset 1px 0 alpha(white, 0.7),
-                inset -1px 0 alpha(white, 0.5);
+                inset 1px 0 alpha(white, 0.2),
+                inset -1px 0 alpha(white, 0.2);
 }
 
 /* Single button */
@@ -435,8 +497,8 @@ GtkSwitch.slider:insensitive {
 	border-radius: 3px;
     box-shadow: inset 0 1px white,
                 inset 0 -1px alpha(white, 0.1),
-                inset 1px 0 alpha(white, 0.5),
-                inset -1px 0 alpha(white, 0.5);
+                inset 1px 0 alpha(white, 0.2),
+                inset -1px 0 alpha(white, 0.2);
 }
 
 /*********************************
