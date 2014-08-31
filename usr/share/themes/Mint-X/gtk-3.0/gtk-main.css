@@ -21,8 +21,14 @@
 @define-color button_bg_a shade(@theme_bg_color, 1.16);
 @define-color button_bg_b shade(@theme_bg_color, 0.98);
 
+@define-color button_raised_bg_a shade(@theme_bg_color, 1.2);
+@define-color button_raised_bg_b shade(@theme_bg_color, 0.95);
+
 @define-color button_hover_bg_a shade(@theme_bg_color, 1.2);
 @define-color button_hover_bg_b shade(@theme_bg_color, 1.02);
+
+@define-color button_hover_raised_bg_a shade(@theme_bg_color, 1.24);
+@define-color button_hover_raised_bg_b shade(@theme_bg_color, 0.99);
 
 @define-color button_active_bg_a shade(@theme_bg_color, 0.78);
 @define-color button_active_bg_b shade(@theme_bg_color, 0.85);

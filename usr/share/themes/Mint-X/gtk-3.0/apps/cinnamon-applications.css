@@ -103,37 +103,6 @@ NemoNotebook.notebook tab:active {
     color: @theme_selected_fg_color;
 }
 
-/* pathbar */
-
-.nemo-pathbar-button,
-NemoPathbarButton {
-    padding: 2px 1px;
-	background-image: -gtk-gradient(linear, left top, left bottom,
-                        from(shade(@theme_bg_color, 1.5)),
-                        to(shade(@theme_bg_color, 0.95)));
-	border-color: shade(@theme_bg_color, 0.6);
-	color: @theme_fg_color;
-	-NemoPathbarButton-border-radius: 3px;
-}
-
-NemoPathbarButton:active {
-	background-image: -gtk-gradient(linear, left top, left bottom,
-                        from(shade(@theme_bg_color, 0.88)),
-                        to(shade(@theme_bg_color, 1.1)));
-}
-
-NemoPathbarButton:hover {
-	background-image: -gtk-gradient(linear, left top, left bottom,
-                        from(mix(alpha(@theme_selected_bg_color, 0.5), shade(@theme_bg_color, 1.5), 0.75)),
-                        to(mix(alpha(@theme_selected_bg_color, 0.8), shade(@theme_bg_color, 0.95), 0.75)));
-}
-
-NemoPathbarButton:active:hover {
-	background-image: -gtk-gradient(linear, left top, left bottom,
-                        from(mix(alpha(@theme_selected_bg_color, 0.8), shade(@theme_bg_color, 0.95), 0.75)),
-                        to(mix(alpha(@theme_selected_bg_color, 0.5), shade(@theme_bg_color, 1.5), 0.75)));
-}
-
 /* small buttons on the nemo status bar */
 
 NemoWindow GtkStatusbar {
@@ -149,8 +118,8 @@ NemoWindow .toolbar .button.image-button {
 /* the fix above for the statusbar buttons also affects the primary toolbar so we need to reset the
     padding for those buttons */
 
-NemoWindow .primary-toolbar .button {
-    padding: 3px;
+NemoWindow .primary-toolbar.toolbar .button.image-button {
+    padding: 4px 7px 5px;
 }
 
 /*********************
