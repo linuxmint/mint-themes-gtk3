@@ -126,3 +126,18 @@
 .pane-separator.vertical {
     background-image: -gtk-scaled(url("assets/pane-separator-grip.png"), url("assets/pane-separator-grip@2.png"));
 }
+
+.scale.slider,
+.scale.slider.horizontal {
+    background-image: -gtk-scaled(url("assets/scale-slider.png"), url("assets/scale-slider@2.png"));
+}
+
+.scale.slider:hover,
+.scale.slider.horizontal:hover {
+    background-image: -gtk-scaled(url("assets/scale-slider-hover.png"), url("assets/scale-slider-hover@2.png"));
+}
+
+.scale.slider:insensitive,
+.scale.slider.horizontal:insensitive {
+    background-image: -gtk-scaled(url("assets/scale-slider-insensitive.png"), url("assets/scale-slider-insensitive@2.png"));
+}
