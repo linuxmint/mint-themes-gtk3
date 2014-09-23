@@ -1417,6 +1417,9 @@ GtkProgressBar {
 .scale.slider.fine-tune:active:hover,
 .scale.slider.fine-tune.horizontal:active,
 .scale.slider.fine-tune.horizontal:active:hover {
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .scale.trough {
@@ -1562,6 +1565,13 @@ GtkProgressBar {
         box-shadow: 1px 0 alpha(white, 0.3);
 }
 
+.scrollbar.slider.fine-tune:prelight:active {
+    border: 3px solid transparent;
+    background-color: shade(@theme_bg_color, 0.9);
+    background-image: none;
+    box-shadow: none;
+}
+
 /*************
 * separators *
 **************/
@@ -1579,6 +1589,10 @@ GtkProgressBar {
     border: 1px solid transparent;
     border-left-color: alpha(black, 0.08);
     border-right-color: alpha(white, 0.35);
+}
+
+GtkTreeView.separator {
+    color: @border;
 }
 
 GtkComboBox .separator {
@@ -2020,4 +2034,7 @@ GtkViewport {
     color: @theme_selected_fg_color;
 }
 
-
+.view:insensitive {
+    background-color: shade(@theme_base_color, 0.95);
+    color: shade(@insensitive_fg_color, 1.3);
+}

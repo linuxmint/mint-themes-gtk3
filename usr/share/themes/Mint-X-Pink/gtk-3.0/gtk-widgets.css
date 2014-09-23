@@ -602,6 +602,77 @@ GtkDrawingArea {
     color: @theme_selected_fg_color;
 }
 
+/**********************
+* fallback mode panel *
+**********************/
+
+.gnome-panel-menu-bar,
+PanelApplet > GtkMenuBar.menubar,
+PanelToplevel,
+PanelWidget,
+PanelAppletFrame,
+PanelApplet {
+    background-color: @theme_bg_color;
+    background-image: none;
+    color: @theme_fg_color;
+}
+
+ClockBox,
+.gnome-panel-menu-bar.menubar,
+PanelApplet > GtkMenuBar.menubar {
+    font: bold;
+}
+
+.gnome-panel-menu-bar.menubar .menuitem *:hover,
+PanelApplet > GtkMenuBar.menubar .menuitem *:hover {
+    text-shadow: 0 1px white;
+}
+
+.gnome-panel-menu-bar.menubar .menu,
+PanelApplet > GtkMenuBar.menubar .menu {
+    font: regular;
+}
+
+.gnome-panel-menu-bar.menubar .menu *:hover,
+PanelApplet > GtkMenuBar.menubar .menu *:hover {
+    text-shadow: none;
+}
+
+.gnome-panel-menu-bar .menuitem:hover,
+PanelApplet > GtkMenuBar.menubar .menuitem:hover,
+.gnome-panel-menu-bar .menuitem *:hover,
+PanelApplet > GtkMenuBar.menubar .menuitem *:hover {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
+
+.gnome-panel-menu-bar .menuitem *:hover,
+PanelApplet > GtkMenuBar.menubar .menuitem *:hover {
+    color: @theme_selected_fg_color;
+}
+
+WnckPager {
+    background-color: lighter(@theme_bg_color);
+}
+
+NaTrayApplet {
+    -NaTrayApplet-icon-padding: 12;
+    -NaTrayApplet-icon-size: 16;
+}
+
+GsmFailWhaleDialog {
+    background-color: @theme_bg_color;
+    background-image: none;
+    color: @theme_fg_color;
+}
+
+GsmFailWhaleDialog .button,
+GsmFailWhaleDialog .button:active {
+    border-image: none;
+    border-color: @border;
+    border-width: 1px;
+}
+
 /****************
  * floating bar *
  ****************/
@@ -1346,6 +1417,9 @@ GtkProgressBar {
 .scale.slider.fine-tune:active:hover,
 .scale.slider.fine-tune.horizontal:active,
 .scale.slider.fine-tune.horizontal:active:hover {
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .scale.trough {
@@ -1491,6 +1565,13 @@ GtkProgressBar {
         box-shadow: 1px 0 alpha(white, 0.3);
 }
 
+.scrollbar.slider.fine-tune:prelight:active {
+    border: 3px solid transparent;
+    background-color: shade(@theme_bg_color, 0.9);
+    background-image: none;
+    box-shadow: none;
+}
+
 /*************
 * separators *
 **************/
@@ -1508,6 +1589,10 @@ GtkProgressBar {
     border: 1px solid transparent;
     border-left-color: alpha(black, 0.08);
     border-right-color: alpha(white, 0.35);
+}
+
+GtkTreeView.separator {
+    color: @border;
 }
 
 GtkComboBox .separator {
@@ -1949,4 +2034,7 @@ GtkViewport {
     color: @theme_selected_fg_color;
 }
 
-
+.view:insensitive {
+    background-color: shade(@theme_base_color, 0.95);
+    color: shade(@insensitive_fg_color, 1.3);
+}
