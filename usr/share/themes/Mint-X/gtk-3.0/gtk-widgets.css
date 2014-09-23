@@ -1578,6 +1578,10 @@ GtkProgressBar {
     border-right-color: alpha(white, 0.35);
 }
 
+GtkTreeView.separator {
+    color: @border;
+}
+
 GtkComboBox .separator {
     /* always disable separators */
     -GtkWidget-wide-separators: 1;
@@ -2017,4 +2021,7 @@ GtkViewport {
     color: @theme_selected_fg_color;
 }
 
-
+.view:insensitive {
+    background-color: shade(@theme_base_color, 0.95);
+    color: shade(@insensitive_fg_color, 1.3);
+}
