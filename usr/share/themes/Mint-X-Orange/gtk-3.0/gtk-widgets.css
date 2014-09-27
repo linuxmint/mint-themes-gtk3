@@ -1315,7 +1315,7 @@ GtkOverlay.osd {
  ******************/
 
 .pane-separator {
-    background-color: @theme_bg_color;
+    background-color: transparent;
     color: @theme_fg_color;
 }
 
@@ -1392,25 +1392,12 @@ GtkProgressBar {
 }
 
 .scale.slider {
-    border: 1px solid alpha(@border, 0.9);
-    border-radius: 7px;
-    background-image: linear-gradient(to bottom,
-                            @scale_slider_a,
-                            @scale_slider_b);
+    border: none;
+    background-color: transparent;
+    background-size: 15px 15px;
+    background-position: center center;
+    background-repeat: no-repeat;
     color: transparent;
-}
-
-.scale.slider:hover {
-    background-image: linear-gradient(to bottom,
-                            @scale_slider_hover_a,
-                            @scale_slider_hover_b);
-}
-
-.scale.slider:insensitive {
-    border-color: shade(@theme_bg_color, 0.8);
-    background-image: linear-gradient(to bottom,
-                            @scale_slider_insensitive_a,
-                            @scale_slider_insensitive_b);
 }
 
 .scale.slider.fine-tune:active,
