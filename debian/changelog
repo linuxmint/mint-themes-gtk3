@@ -1,3 +1,19 @@
+mint-themes-gtk3 (3.10-6) rebecca; urgency=medium
+
+  * add some styling for fine-tune range sliders
+  * restyle raised/linked primary toolbar buttons
+  * add some basic theming for cinnamon fallback mode
+  * Add a Blue theme
+  * add an orange version of the theme
+  * add a pink version of the theme
+  * update Debian files
+  * Added GTK3 theme thumbnail
+  * Added thumbnails for Blue, Orange and Pink
+  * add support for insensitive icon views and add a couple of recent updates to Mint-X to the color variations. Additions such as fine-tune slider themeing and fallback panel themeing
+  * fix the bg color of the pane separator handle in notebooks
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 30 Sep 2014 11:06:47 +0200
+
 mint-themes-gtk3 (3.10-5) qiana; urgency=medium
 
   * fix black bg in evolution
