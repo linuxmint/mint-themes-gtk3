@@ -127,6 +127,10 @@
     background-image: -gtk-scaled(url("assets/pane-separator-grip.png"), url("assets/pane-separator-grip@2.png"));
 }
 
+/****************
+ * scale slider *
+ ****************/
+
 .scale.slider,
 .scale.slider.horizontal {
     background-image: -gtk-scaled(url("assets/scale-slider.png"), url("assets/scale-slider@2.png"));
