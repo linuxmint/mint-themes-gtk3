@@ -1,3 +1,15 @@
+mint-themes-gtk3 (3.10-7) rebecca; urgency=medium
+
+  * Fixed some range sliders in color variations
+  * Added an aqua version of the theme
+  * Added a brown version of the theme
+  * Added a purple version of the theme
+  * Added a red version of the theme
+  * Added a sand colored theme
+  * Added a teal colored version of the theme
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 01 Nov 2014 14:30:52 +0100
+
 mint-themes-gtk3 (3.10-6) rebecca; urgency=medium
 
   * add some styling for fine-tune range sliders
