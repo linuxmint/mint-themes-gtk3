@@ -105,22 +105,32 @@ NemoNotebook.notebook tab:active {
 
 /* small buttons on the nemo status bar */
 
-NemoWindow GtkStatusbar {
+/*NemoWindow GtkStatusbar {
     padding: 0;
-}
+}*/
 
-NemoWindow .toolbar .button.image-button {
+/*NemoWindow .toolbar .button.image-button {
     -GtkWidget-focus-line-width: 0;
     -GtkWidget-focus-padding: 0;
     padding: 0 6px;
-}
+}*/
 
 /* the fix above for the statusbar buttons also affects the primary toolbar so we need to reset the
     padding for those buttons */
 
-NemoWindow .primary-toolbar.toolbar .button.image-button {
+/*NemoWindow .primary-toolbar.toolbar .button.image-button {
     padding: 4px 7px 5px;
-}
+}*/
+
+/*NemoWindow GtkEventBox {
+    color: red;
+    padding: 12px;
+}*/
+
+/*NemoStatusBar GtkBox.toolbar {
+    padding: 12px;
+    color: red;
+}*/
 
 /*********************
  * Cinnamon Settings *
