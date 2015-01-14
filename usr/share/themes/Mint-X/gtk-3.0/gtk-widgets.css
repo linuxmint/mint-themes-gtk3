@@ -18,8 +18,8 @@
     -GtkCheckButton-indicator-size: 16;
     -GtkCheckMenuItem-indicator-size: 12;
 
-    -GtkDialog-button-spacing: 4;
-    -GtkDialog-action-area-border: 0;
+    -GtkDialog-button-spacing: 5;
+    -GtkDialog-action-area-border: 5;
     
     -GtkExpander-expander-size: 14;
 
@@ -540,9 +540,14 @@ GtkDrawingArea {
  * Dialogs *
  ***********/
 
-.message-dialog {
-    -GtkDialog-button-spacing: 0;
+/*.message-dialog {
+    -GtkDialog-button-spacing: 8;
 }
+
+.message-dialog .dialog-action-area .button {
+    padding: 4px;
+    margin: 4px;
+}*/
 
 /*********
  * entry *
