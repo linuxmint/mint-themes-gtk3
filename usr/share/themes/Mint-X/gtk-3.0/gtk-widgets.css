@@ -6,8 +6,8 @@
     padding: 0;
     /*engine: none;*/
 
-    /*background-clip: padding-box;
-    background-origin: border-box;*/
+    background-clip: padding-box;
+    background-origin: border-box;
     
     -GtkArrow-arrow-scaling: 0.7;
 
@@ -18,8 +18,8 @@
     -GtkCheckButton-indicator-size: 16;
     -GtkCheckMenuItem-indicator-size: 12;
 
-    -GtkDialog-button-spacing: 5;
-    -GtkDialog-action-area-border: 5;
+    -GtkDialog-button-spacing: 6;
+    -GtkDialog-action-area-border: 6;
     
     -GtkExpander-expander-size: 14;
 
@@ -108,7 +108,7 @@ GtkAssistant .sidebar {
 
 .button
 /*.button.menuitem.menubar*/ {
-    padding: 5px 7px;
+    padding: 4px 7px;
 }
 
 /*.button.text-button {
@@ -122,7 +122,7 @@ GtkAssistant .sidebar {
 }
 
 .button.text-button {
-    padding: 5px 16px;
+    padding: 4px 16px;
 }
 
 .stack-switcher > .button.text-button {
@@ -133,7 +133,7 @@ GtkAssistant .sidebar {
 }*/
 
 GtkComboBox .button {
-    padding: 3px 4px;
+    padding: 2px 4px;
 }
 
 /*.toolbar .button {
@@ -422,15 +422,17 @@ GtkComboBox:insensitive {
 
 GtkComboBox.combobox-entry .entry:first-child,
 GtkComboBox.combobox-entry .button:first-child {
-    border-right-style: none;
+    /*border-right-style: none;*/
+    border-right-width: 0;
     border-radius: 3px 0 0 3px;
-    /*border-image-width: 3px 0 4px 3px;  */
+    border-image-width: 3px 0 4px 3px;  
 }
 GtkComboBox.combobox-entry .entry:last-child,
 GtkComboBox.combobox-entry .button:last-child {
-    border-left-style: none;
+   /* border-left-style: none;*/
+    border-left-width: 0;
     border-radius: 0 3px 3px 0;
-    /*border-image-width: 3px 3px 4px 0;    */
+    border-image-width: 3px 3px 4px 0;    
 }
 
 GtkComboBox.combobox-entry .button {
