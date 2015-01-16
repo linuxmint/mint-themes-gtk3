@@ -13,7 +13,7 @@
 
     -GtkButton-child-displacement-x: 0;
     -GtkButton-child-displacement-y: 0;
-    -GtkButtonBox-child-min-height: 26;
+    -GtkButton-image-spacing: 6;
     
     -GtkCheckButton-indicator-size: 16;
     -GtkCheckMenuItem-indicator-size: 12;
@@ -42,7 +42,7 @@
     -GtkTreeView-expander-size: 11;
     -GtkTreeView-horizontal-separator: 4;
 
-    -GtkWidget-focus-padding: 2;
+    /*-GtkWidget-focus-padding: 2;*/
     -GtkWidget-focus-line-width: 0;
     /*-GtkWidget-link-color: @link_color;*/
     -GtkWidget-separator-height: 1;
@@ -97,65 +97,45 @@ GtkAssistant .sidebar {
 /**********
  * button *
  **********/
-
-/*.button {
-    -GtkButton-image-spacing: 4;
-    -GtkButton-interior-focus: 1;
-    -GtkWidget-focus-line-width: 0;
-    -GtkButton-default-border: 0;
-    -GtkButton-inner-border: 3;
-}*/
-
-.button
-/*.button.menuitem.menubar*/ {
+.button,
+.button.menuitem.menubar {
     padding: 4px 7px;
+    /*padding: 0;*/
 }
 
-/*.button.text-button {
-    padding: 4px 12px;
-}*/
-
-.header-bar .titlebutton.button,
-.titlebar .titlebutton.button,
 .button.image-button {
-    padding: 8px;
+    padding: 4px;
 }
 
 .button.text-button {
     padding: 4px 16px;
+    /*padding: 0;*/
+}
+
+.header-bar .button,
+.header-bar .button.image-button,
+.header-bar .titlebutton.button,
+.titlebar .titlebutton.button {
+    padding: 8px;
+}
+
+.primary-toolbar .button.image-button {
+    padding: 6px;
+}
+
+.primary-toolbar .button.text-button {
+    padding: 6px 16px;
 }
 
 .stack-switcher > .button.text-button {
-      padding: 5px 10px 6px; }
-
-/*GtkColorButton.button {
-    padding: 2px;
-}*/
+      padding: 5px 10px 6px; 
+}
 
 GtkComboBox .button {
     padding: 2px 4px;
 }
 
-/*.toolbar .button {
-    padding: 2px;
-}*/
-
-/*.toolbar .button.text-button {
-    padding: 3px 11px;
-}*/
-
-/*.toolbar .button.image-button {
-    padding: 2px;
-}*/
-
-/*.button.image-button {
-    padding: 2px;
-}*/
-
-/*.primary-toolbar.toolbar .button.image-button {
-    padding: 4px;
-}*/
-
+.inline-toolbar GtkToolButton > .button,
 .inline-toolbar .button.image-button {
     padding: 4px;
 }
@@ -556,7 +536,8 @@ GtkDrawingArea {
  *********/
 
 .entry {
-    padding: 5px 5px 5px 5px;
+    /*padding: 4px 4px 4px 4px;*/
+    padding: 4px;
     color: @theme_text_color;
 }
 
