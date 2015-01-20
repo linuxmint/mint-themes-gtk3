@@ -108,7 +108,7 @@ NemoNotebook.notebook tab:active {
 NemoWindow .toolbar .button.image-button {
     -GtkWidget-focus-line-width: 0;
     -GtkWidget-focus-padding: 0;
-    padding: 0 6px;
+    padding: 4px;
 }
 
 /* the fix above for the statusbar buttons also affects the primary toolbar so we need to reset the
