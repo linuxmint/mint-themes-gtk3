@@ -1,4 +1,10 @@
-mint-themes-gtk3 (3.10.7) rebecca; urgency=medium
+mint-themes-gtk3 (3.14-1) betsy; urgency=medium
+
+  * Fixes for GTK 3.14
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 20 Jan 2015 12:31:39 +0100
+
+mint-themes-gtk3 (3.10-7) rebecca; urgency=medium
 
   * Fixed some range sliders in color variations
   * Added an aqua version of the theme
