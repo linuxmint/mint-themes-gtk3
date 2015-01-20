@@ -1,3 +1,9 @@
+mint-themes-gtk3 (3.10-8) rebecca; urgency=medium
+
+  * Fixed padding of nemo status bar buttons
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 20 Jan 2015 13:27:36 +0100
+
 mint-themes-gtk3 (3.10-7) rebecca; urgency=medium
 
   * Fixed some range sliders in color variations
