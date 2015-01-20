@@ -8,6 +8,7 @@ Standards-Version: 3.9.5
 Package: mint-themes-gtk3
 Replaces: mint-themes
 Architecture: all
+Depends: ${misc:Depends}
 Description: Mint themes for GTK3
  A collection of mint themes for GTK3.
 
