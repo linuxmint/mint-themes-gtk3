@@ -105,10 +105,6 @@ NemoNotebook.notebook tab:active {
 
 /* small buttons on the nemo status bar */
 
-NemoWindow GtkStatusbar {
-    padding: 0;
-}
-
 NemoWindow .toolbar .button.image-button {
     -GtkWidget-focus-line-width: 0;
     -GtkWidget-focus-padding: 0;
@@ -119,7 +115,11 @@ NemoWindow .toolbar .button.image-button {
     padding for those buttons */
 
 NemoWindow .primary-toolbar.toolbar .button.image-button {
-    padding: 4px 7px 5px;
+    padding: 0 7px;
+}
+
+NemoWindow .primary-toolbar.toolbar .entry {
+    padding: 3px;
 }
 
 /*********************

@@ -38,6 +38,10 @@ TerminalScreen {
 	color: #fff;
 }
 
+/*TerminalWindow {
+    background-color: #333;
+}*/
+
 TerminalWindow GtkNotebook.notebook {
     border-bottom-width: 0;
     border-right-width: 0;

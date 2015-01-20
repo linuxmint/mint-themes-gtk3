@@ -1,8 +1,16 @@
 /**********
  * button *
  **********/
- 
+
 .button,
+.button.flat:hover,
+.dialog-action-area.linked .button:first-child,
+.dialog-action-area.linked .button:hover:first-child,
+.dialog-action-area.linked .button,
+.dialog-action-area.linked .button:hover,
+.dialog-action-area.linked .button:last-child,
+.dialog-action-area.linked .button:hover:last-child,
+.inline-toolbar GtkToolButton > .button,
 .inline-toolbar.toolbar .button {
     border-style: solid;
     border-width: 2px;
@@ -15,12 +23,34 @@
                 inset 0 -1px alpha(white, 0.1);
 }
 
-.button:active,
-.inline-toolbar.toolbar .button:active {
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 3px;
+.button.flat {
     border-color: transparent;
+    border-image: none;
+    box-shadow: none;
+}
+
+.button:active,
+.button:checked,
+.button.flat:checked,
+.button.flat:active,
+.button.flat:checked:hover,
+.button.flat:active:hover,
+.inline-toolbar GtkToolButton > .button:active,
+.inline-toolbar GtkToolButton > .button:checked,
+.inline-toolbar.toolbar .button:active,
+.inline-toolbar.toolbar .button:active:checked,
+.dialog-action-area.linked .button:active:first-child,
+.dialog-action-area.linked .button:active:hover:first-child,
+.dialog-action-area.linked .button:checked:first-child,
+.dialog-action-area.linked .button:checked:hover:first-child,
+.dialog-action-area.linked .button:active,
+.dialog-action-area.linked .button:active:hover,
+.dialog-action-area.linked .button:checked,
+.dialog-action-area.linked .button:checked:hover,
+.dialog-action-area.linked .button:active:last-child,
+.dialog-action-area.linked .button:active:hover:last-child,
+.dialog-action-area.linked .button:checked:last-child,
+.dialog-action-area.linked .button:checked:hover:last-child {
     border-image: -gtk-scaled(url("borders/button/button-active.png"), url("borders/button/button-active@2.png")) 4 / 4px stretch;
     box-shadow: inset 0 1px alpha(black, 0.1),
                 inset 1px 0 alpha(black, 0.08),
@@ -29,11 +59,11 @@
 }
 
 .button:insensitive,
-.inline-toolbar.toolbar .button:insensitive {
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 3px;
-    border-color: transparent;
+.inline-toolbar GtkToolButton > .button:insensitive,
+.inline-toolbar.toolbar .button:insensitive,
+.dialog-action-area.linked .button:insensitive:first-child,
+.dialog-action-area.linked .button:insensitive,
+.dialog-action-area.linked .button:insensitive:last-child {
     border-image: -gtk-scaled(url("borders/button/button-insensitive.png"), url("borders/button/button-insensitive@2.png")) 4 / 4px stretch;
     box-shadow: inset 0 1px alpha(white, 0.3),
                 inset 1px 0 alpha(white, 0.15),
@@ -42,11 +72,11 @@
 }
 
 .button:insensitive:active,
-.inline-toolbar.toolbar .button:insensitive:active {
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 3px;
-    border-color: transparent;
+.button:insensitive:checked,
+.inline-toolbar GtkToolButton > .button:insensitive:active,
+.inline-toolbar GtkToolButton > .button:insensitive:checked,
+.inline-toolbar.toolbar .button:insensitive:active,
+.inline-toolbar.toolbar .button:insensitive:active:checked {
     border-image: -gtk-scaled(url("borders/button/button-active-insensitive.png"), url("borders/button/button-active-insensitive@2.png")) 4 / 4px stretch;
     box-shadow: inset 0 1px alpha(black, 0.05),
                 inset 1px 0 alpha(black, 0.02),
@@ -54,10 +84,10 @@
                 inset 0 -1px alpha(black, 0.01);
 }
 
-.button.default {
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 3px;
+.button.default,
+.dialog-action-area.linked .button.default:first-child,
+.dialog-action-area.linked .button.default,
+.dialog-action-area.linked .button.default:last-child {
     border-color: transparent;
     border-image: -gtk-scaled(url("borders/button/button-focus.png"), url("borders/button/button-focus@2.png")) 4 / 4px stretch;
     box-shadow: inset 0 1px alpha(white, 1.0),
@@ -66,10 +96,14 @@
                 inset 0 -1px alpha(white, 0.1);
 }
 
-.button.default:active {
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 3px;
+.button.default:active,
+.button.default:checked,
+.dialog-action-area.linked .button.default:active:first-child,
+.dialog-action-area.linked .button.default:checked:first-child,
+.dialog-action-area.linked .button.default:active,
+.dialog-action-area.linked .button.default:checked,
+.dialog-action-area.linked .button.default:active:last-child,
+.dialog-action-area.linked .button.default:checked:last-child {
     border-color: transparent;
     border-image: -gtk-scaled(url("borders/button/button-focus.png"), url("borders/button/button-focus@2.png")) 4 / 4px stretch;
     box-shadow: inset 0 1px alpha(black, 0.1),
@@ -78,89 +112,145 @@
                 inset 0 -1px alpha(black, 0.06);
 }
 
-/**************************
-* Primary toolbar buttons *
-**************************/
+/************************************
+* Primary toolbar/headerbar buttons *
+*************************************/
 
+.header-bar .titlebutton.button,
+.titlebar .titlebutton.button,
+.primary-toolbar .button.flat {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: transparent;
+    border-image: none;
+    box-shadow: none;
+}
+
+.header-bar .button,
+.header-bar .titlebutton.button.raised,
+.header-bar .titlebutton.button:hover,
+.titlebar .titlebutton.raised,
+.titlebar .titlebutton.button:hover,
+.primary-toolbar .button:hover,
+.primary-toolbar .button.flat:hover,
 .primary-toolbar .button.raised,
 .primary-toolbar .button.raised:hover,
 .primary-toolbar .raised .button,
-.primary-toolbar .raised .button:hover,
-.primary-toolbar GtkComboBox .button {
+.primary-toolbar .raised .button:hover {
     border-style: solid;
-    border-width: 2px;
-    border-radius: 3px;
-    border-color: transparent;
-    border-image: -gtk-scaled(url("borders/button/raised-button.png"), url("borders/button/raised-button@2.png")) 4 / 4px stretch;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: @button_border;
+    border-image: none;
     box-shadow: inset 0 1px alpha(white, 1.0),
-                inset 1px 0 alpha(white, 0.2),
-                inset -1px 0 alpha(white, 0.2),
-                inset 0 -1px alpha(white, 0.1);
+                inset 1px 0 alpha(white, 0.3),
+                inset -1px 0 alpha(white, 0.3),
+                inset 0 -1px alpha(white, 0.1),
+                0 1px alpha(white, 0.2);
 }
 
+.header-bar .button:checked,
+.header-bar .button:checked:hover,
+.header-bar .button:active,
+.header-bar .button:active:hover,
+.header-bar .titlebutton.button:checked,
+.header-bar .titlebutton.button:checked:hover,
+.titlebar .titlebutton.button:checked,
+.titlebar .titlebutton.button:checked:hover,
+.header-bar .titlebutton.button:active,
+.header-bar .titlebutton.button:active:hover,
+.titlebar .titlebutton.button:active,
+.titlebar .titlebutton.button:active:hover,
+.primary-toolbar .button:checked,
+.primary-toolbar .button:checked:hover,
 .primary-toolbar .button:active,
 .primary-toolbar .button:active:hover,
+.primary-toolbar .button.flat:checked,
+.primary-toolbar .button.flat:checked:hover,
+.primary-toolbar .button.flat:active,
+.primary-toolbar .button.flat:active:hover,
+.primary-toolbar .button.raised:checked,
+.primary-toolbar .button.raised:checked:hover,
+.primary-toolbar .raised .button:checked,
+.primary-toolbar .raised .button:checked:hover,
 .primary-toolbar .button.raised:active,
-.primary-toolbar .raised .button:active {
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 3px;
-    border-color: transparent;
-    border-image: -gtk-scaled(url("borders/button/button-active.png"), url("borders/button/button-active@2.png")) 4 / 4px stretch;
+.primary-toolbar .button.raised:active:hover,
+.primary-toolbar .raised .button:active,
+.primary-toolbar .raised .button:active:hover {
+    border-color: @button_active_border;
+    border-image: none;
     box-shadow: inset 0 1px alpha(black, 0.1),
                 inset 1px 0 alpha(black, 0.08),
                 inset -1px 0 alpha(black, 0.08),
-                inset 0 -1px alpha(black, 0.06);
+                inset 0 -1px alpha(black, 0.06),
+                0 1px alpha(white, 0.4);
 }
 
+.header-bar .button:insensitive,
+.header-bar .titlebutton.button.raised:insensitive,
+.titlebar .titlebutton.raised:insensitive,
 .primary-toolbar .button.raised:insensitive,
-.primary-toolbar .raised .button:insensitive,
-.primary-toolbar GtkComboBox .button:insensitive {
+.primary-toolbar .raised .button:insensitive {
     border-style: solid;
-    border-width: 2px;
-    border-radius: 3px;
-    border-color: transparent;
-    border-image: -gtk-scaled(url("borders/button/button-insensitive.png"), url("borders/button/button-insensitive@2.png")) 4 / 4px stretch;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: @button_insensitive_border;
+    border-image: none;
     box-shadow: inset 0 1px alpha(white, 0.3),
                 inset 1px 0 alpha(white, 0.15),
                 inset -1px 0 alpha(white, 0.15),
                 inset 0 -1px alpha(white, 0.06);
 }
 
-.primary-toolbar .button,
-.primary-toolbar .button:insensitive {
+.header-bar .button:insensitive:checked,
+.header-bar .titlebutton.button.raised:insensitive:checked,
+.titlebar .titlebutton.raised:insensitive:checked,
+.primary-toolbar .button:insensitive:checked,
+.primary-toolbar .button.flat:insensitive:checked,
+.primary-toolbar .button.raised:insensitive:checked,
+.primary-toolbar .raised .button:insensitive:checked {
     border-style: solid;
-    border-width: 2px;
-    border-radius: 3px;
-    border-color: transparent;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: @button_insensitive_active_border;
     border-image: none;
-    box-shadow: none;
-}
-
-.primary-toolbar .button:hover {
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 3px;
-    border-color: transparent;
-    border-image: -gtk-scaled(url("borders/button/button.png"), url("borders/button/button@2.png")) 4 / 4px stretch;
-    box-shadow: inset 0 1px alpha(white, 1.0),
-                inset 1px 0 alpha(white, 0.5),
-                inset -1px 0 alpha(white, 0.5),
-                inset 0 -1px alpha(white, 0.1);
-}
-
-.primary-toolbar .button:insensitive:active,
-.primary-toolbar .button.raised:insensitive:active,
-.primary-toolbar .raised .button:insensitive:active {
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 3px;
-    border-color: transparent;
-    border-image: -gtk-scaled(url("borders/button/button-active-insensitive.png"), url("borders/button/button-active-insensitive@2.png")) 4 / 4px stretch;
     box-shadow: inset 0 1px alpha(black, 0.05),
                 inset 1px 0 alpha(black, 0.02),
                 inset -1px 0 alpha(black, 0.02),
                 inset 0 -1px alpha(black, 0.01);
+}
+
+.header-bar .button.default,
+.header-bar .titlebutton.button.default,
+.titlebar .titlebutton.raised.default,
+.primary-toolbar .button.default,
+.primary-toolbar .button.flat.default,
+.primary-toolbar .button.raised.default,
+.primary-toolbar .raised .button.default {
+    border-color: shade(@theme_selected_bg_color, 0.8);
+    box-shadow: 0 1px @theme_selected_bg_color,
+                1px 0 @theme_selected_bg_color,
+                -1px 0 @theme_selected_bg_color,
+                0 -1px @theme_selected_bg_color;
+}
+
+.header-bar .button.default:active,
+.header-bar .titlebutton.button.default:active,
+.titlebar .titlebutton.raised.default:active,
+.primary-toolbar .button.default:active,
+.primary-toolbar .button.flat.default:active,
+.primary-toolbar .button.raised.default:active,
+.primary-toolbar .raised .button.default:active {
+    border-color: shade(@theme_selected_bg_color, 0.8);
+    box-shadow: 0 1px @theme_selected_bg_color,
+                1px 0 @theme_selected_bg_color,
+                -1px 0 @theme_selected_bg_color,
+                0 -1px @theme_selected_bg_color,
+                inset 0 1px alpha(black, 0.1),
+                inset 1px 0 alpha(black, 0.08),
+                inset -1px 0 alpha(black, 0.08),
+                inset 0 -1px alpha(black, 0.06);
 }
 
 /*****************
@@ -190,10 +280,6 @@ column-header.button:last-child:active:hover,
 column-header:last-child .button:active:hover {
     border-right-width: 0;
 }
-
-/*********
- * entry *
- *********/
 
 .entry,
 GtkComboBox.combobox-entry .button {
@@ -289,24 +375,23 @@ GtkComboBox.combobox-entry .button {
  **********/
 
 GtkSwitch.trough {
-    border: 2px solid transparent;
-    border-radius: 3px;
-    border-color: transparent;
-    border-image: -gtk-scaled(url("borders/button/button-active.png"), url("borders/button/button-active@2.png")) 4 / 4px stretch;
+    border: 1px solid @button_border;
+    border-radius: 4px;
     box-shadow: inset 0 1px alpha(black, 0.1),
                 inset 1px 0 alpha(black, 0.08),
                 inset -1px 0 alpha(black, 0.08),
-                inset 0 -1px alpha(black, 0.06);
+                inset 0 -1px alpha(black, 0.06),
+                0 1px alpha(white, 0.2);
 }
 
 GtkSwitch.trough:insensitive,
 GtkSwitch.trough:insensitive:active {
-    border-image: -gtk-scaled(url("borders/button/button-active-insensitive.png"), url("borders/button/button-active-insensitive@2.png")) 4 / 4px stretch;
+    border-color: @button_insensitive_border;
 }
 
 GtkSwitch.slider {
-    border: 1px solid @border;
-    border-radius: 3px;
+    border: 1px solid @button_border;
+    border-radius: 4px;
     box-shadow: inset 0 1px alpha(white, 1.0),
                 inset 1px 0 alpha(white, 0.5),
                 inset -1px 0 alpha(white, 0.5),
@@ -314,7 +399,7 @@ GtkSwitch.slider {
 }
 
 GtkSwitch.slider:insensitive {
-    border: 1px solid alpha(@border, 0.6);
+    border-color: @button_insensitive_border;
     box-shadow: inset 0 1px alpha(white, 0.3),
                 inset 1px 0 alpha(white, 0.15),
                 inset -1px 0 alpha(white, 0.15),
@@ -331,6 +416,7 @@ GtkSwitch.slider:insensitive {
 
 .linked .entry,
 .primary-toolbar .linked .entry {
+
     border-right-width: 0;
     border-left-width: 0;
     border-radius: 0;
@@ -340,6 +426,7 @@ GtkSwitch.slider:insensitive {
 .linked .entry:first-child,
 .primary-toolbar .linked .entry:first-child {
     border-right-width: 0;
+    border-left-width: 2px;
     border-radius: 3px 0 0 3px;
     border-image-width: 3px 0 4px 3px;
 }
@@ -353,11 +440,12 @@ GtkSwitch.slider:insensitive {
 
 .linked .entry:only-child,
 .primary-toolbar .linked .entry:only-child {
-    border-right-width: 1px;
-    border-left-width: 1px;
+    border-right-width: 2px;
+    border-left-width: 2px;
     border-radius: 3px;
     border-image-width: 3px 3px 4px 3px;
 }
+
 /********************************************
  * Linked borders and shadows - Nomal/Hover *
  ********************************************/
@@ -366,32 +454,18 @@ GtkSwitch.slider:insensitive {
 
 .linked .button,
 .linked .button:hover,
-
-.toolbar .button.raised.linked,
-.toolbar .raised.linked .button,
-.toolbar .button.raised.linked:hover,
-.toolbar .raised.linked .button:hover,
-
-.primary-toolbar .linked .button,
-.primary-toolbar .linked .button:hover,
-
-.primary-toolbar .button.raised.linked,
-.primary-toolbar .raised.linked .button,
-.primary-toolbar .button.raised.linked:hover,
-.primary-toolbar .raised.linked .button:hover,
-
+.linked > GtkComboBox > .button:dir(ltr),
+.linked > GtkComboBox > .button:hover:dir(ltr),
 .inline-toolbar.toolbar .button,
 .inline-toolbar.toolbar .button:hover,
 .inline-toolbar.toolbar .button:insensitive,
-
 .inline-toolbar.toolbar GtkToolButton > .button,
 .inline-toolbar.toolbar GtkToolButton > .button:hover,
 .inline-toolbar.toolbar GtkToolButton > .button:insensitive {
-	border-right-width: 0;
-	border-left-width: 0;
-	border-image-width: 4px 0 4px 0;
-	border-radius: 0;
-	
+    border-right-width: 0;
+    border-left-width: 0;
+    border-image-width: 4px 0 4px 0;
+    border-radius: 0;
     box-shadow: inset 0 1px white,
                 inset 0 -1px alpha(white, 0.1),
                 inset -1px 0 alpha(black, 0.2),
@@ -402,31 +476,16 @@ GtkSwitch.slider:insensitive {
 
 .linked .button:first-child,
 .linked .button:first-child:hover,
-
-.toolbar .button.raised.linked:first-child,
-.toolbar .raised.linked .button:first-child,
-.toolbar .button.raised.linked:first-child:hover,
-.toolbar .raised.linked .button:first-child:hover,
-
-.primary-toolbar .linked .button:first-child,
-.primary-toolbar .linked .button:first-child:hover,
-
-.primary-toolbar .button.raised.linked:first-child,
-.primary-toolbar .raised.linked .button:first-child,
-.primary-toolbar .button.raised.linked:first-child:hover,
-.primary-toolbar .raised.linked .button:first-child:hover,
-
+.linked > GtkComboBox:first-child > .button:dir(ltr),
+.linked > GtkComboBox:first-child > .button:hover:dir(ltr),
 .inline-toolbar.toolbar .button:first-child,
 .inline-toolbar.toolbar .button:first-child:hover,
-
 .inline-toolbar.toolbar GtkToolButton:first-child > .button,
 .inline-toolbar.toolbar GtkToolButton:first-child > .button:hover {
-	border-left-width: 2px;
-	border-right-width: 0;
-	border-image-width: 4px 0 4px 4px;
-	border-bottom-right-radius: 0;
-	border-top-right-radius: 0;
-	
+    border-left-width: 2px;
+    border-right-width: 0;
+    border-image-width: 4px 0 4px 4px;
+    border-radius: 3px 0 0 3px;
     box-shadow: inset 0 1px white,
                 inset 0 -1px alpha(white, 0.1),
                 inset 1px 0 alpha(white, 0.2),
@@ -437,31 +496,16 @@ GtkSwitch.slider:insensitive {
 
 .linked .button:last-child,
 .linked .button:last-child:hover,
-
-.toolbar .button.raised.linked:last-child,
-.toolbar .raised.linked .button:last-child,
-.toolbar .button.raised.linked:last-child:hover,
-.toolbar .raised.linked .button:last-child:hover,
-
-.primary-toolbar .linked .button:last-child,
-.primary-toolbar .linked .button:last-child:hover,
-
-.primary-toolbar .button.raised.linked:last-child,
-.primary-toolbar .raised.linked .button:last-child,
-.primary-toolbar .button.raised.linked:last-child:hover,
-.primary-toolbar .raised.linked .button:last-child:hover,
-
+.linked > GtkComboBox:last-child > .button:dir(ltr),
+.linked > GtkComboBox:last-child > .button:hover:dir(ltr),
 .inline-toolbar.toolbar .button:last-child,
 .inline-toolbar.toolbar .button:hover:last-child,
-
 .inline-toolbar.toolbar GtkToolButton:last-child > .button,
 .inline-toolbar.toolbar GtkToolButton:last-child > .button:hover {
-	border-left-width: 0;
-	border-right-width: 2px;
-	border-image-width: 4px 4px 4px 0;
-	border-bottom-left-radius: 0;
-	border-top-left-radius: 0;
-	
+    border-left-width: 0;
+    border-right-width: 2px;
+    border-image-width: 4px 4px 4px 0;
+    border-radius: 0 3px 3px 0;
     box-shadow: inset 0 1px white,
                 inset 0 -1px alpha(white, 0.1),
                 inset 1px 0 alpha(white, 0.2),
@@ -472,29 +516,14 @@ GtkSwitch.slider:insensitive {
 
 .linked .button:only-child,
 .linked .button:only-child:hover,
-
-.toolbar .button.raised.linked:only-child,
-.toolbar .raised.linked .button:only-child,
-.toolbar .button.raised.linked:only-child:hover,
-.toolbar .raised.linked .button:only-child:hover,
-
-.primary-toolbar .linked .button:only-child,
-.primary-toolbar .linked .button:only-child:hover,
-
-.primary-toolbar .button.raised.linked:only-child,
-.primary-toolbar .raised.linked .button:only-child,
-.primary-toolbar .button.raised.linked:only-child:hover,
-.primary-toolbar .raised.linked .button:only-child:hover,
-
 .inline-toolbar.toolbar .button:only-child,
 .inline-toolbar.toolbar .button:only-child:hover,
-
 .inline-toolbar.toolbar GtkToolButton:only-child > .button,
 .inline-toolbar.toolbar GtkToolButton:only-child > .button:hover {
-	border-left-width: 2px;
-	border-right-width: 2px;
-	border-image-width: 4px 4px 4px 4px;
-	border-radius: 3px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-image-width: 4px 4px 4px 4px;
+    border-radius: 3px;
     box-shadow: inset 0 1px white,
                 inset 0 -1px alpha(white, 0.1),
                 inset 1px 0 alpha(white, 0.2),
@@ -508,24 +537,11 @@ GtkSwitch.slider:insensitive {
 /* Middle button */
 
 .linked .button:active,
+.linked .button:checked,
 .linked .button:active:hover,
-
-.toolbar .button.raised.linked:active,
-.toolbar .raised.linked .button:active,
-.toolbar .button.raised.linked:active:hover,
-.toolbar .raised.linked .button:active:hover,
-
-.primary-toolbar .linked .button:active,
-.primary-toolbar .linked .button:active:hover,
-
-.primary-toolbar .button.raised.linked:active,
-.primary-toolbar .raised.linked .button:active,
-.primary-toolbar .button.raised.linked:active:hover,
-.primary-toolbar .raised.linked .button:active:hover,
-
+.linked .button:checked:hover,
 .inline-toolbar.toolbar .button:active,
 .inline-toolbar.toolbar .button:active:hover,
-
 .inline-toolbar.toolbar GtkToolButton > .button:active,
 .inline-toolbar.toolbar GtkToolButton > .button:active:hover {
     box-shadow: inset 0 1px alpha(black, 0.1),
@@ -537,27 +553,14 @@ GtkSwitch.slider:insensitive {
 /* Leftmost button */
 
 .linked .button:first-child:active,
+.linked .button:first-child:checked,
 .linked .button:first-child:active:hover,
-
-.toolbar .button.raised.linked:first-child:active,
-.toolbar .raised.linked .button:first-child:active,
-.toolbar .button.raised.linked:first-child:active:hover,
-.toolbar .raised.linked .button:first-child:active:hover,
-
-.primary-toolbar .linked .button:first-child:active,
-.primary-toolbar .linked .button:first-child:active:hover,
-
-.primary-toolbar .button.raised.linked:first-child:active,
-.primary-toolbar .raised.linked .button:first-child:active,
-.primary-toolbar .button.raised.linked:first-child:active:hover,
-.primary-toolbar .raised.linked .button:first-child:active:hover,
-
+.linked .button:first-child:checked:hover,
 .inline-toolbar.toolbar .button:first-child:active,
 .inline-toolbar.toolbar .button:first-child:active:hover,
-
 .inline-toolbar.toolbar GtkToolButton:first-child > .button:active,
 .inline-toolbar.toolbar GtkToolButton:first-child > .button:active:hover {
-	box-shadow: inset 0 1px alpha(black, 0.1),
+    box-shadow: inset 0 1px alpha(black, 0.1),
                 inset 0 -1px alpha(black, 0.06),
                 inset 1px 0 alpha(black, 0.08),
                 inset -1px 0 alpha(black, 0.2);   
@@ -566,59 +569,17 @@ GtkSwitch.slider:insensitive {
 /* Rightmost button */
 
 .linked .button:last-child:active,
+.linked .button:last-child:checked,
 .linked .button:last-child:active:hover,
-
-.toolbar .button.raised.linked:last-child:active,
-.toolbar .raised.linked .button:last-child:active,
-.toolbar .button.raised.linked:last-child:active:hover,
-.toolbar .raised.linked .button:last-child:active:hover,
-
-.primary-toolbar .linked .button:last-child:active,
-.primary-toolbar .linked .button:last-child:active:hover,
-
-.primary-toolbar .button.raised.linked:last-child:active,
-.primary-toolbar .raised.linked .button:last-child:active,
-.primary-toolbar .button.raised.linked:last-child:active:hover,
-.primary-toolbar .raised.linked .button:last-child:active:hover,
-
+.linked .button:last-child:checked:hover,
 .inline-toolbar.toolbar .button:last-child:active,
 .inline-toolbar.toolbar .button:last-child:active:hover,
-
 .inline-toolbar.toolbar GtkToolButton:last-child > .button:active,
 .inline-toolbar.toolbar GtkToolButton:last-child > .button:active:hover {
     box-shadow: inset 0 1px alpha(black, 0.1),
                 inset 0 -1px alpha(black, 0.06),
                 inset 1px 0 alpha(black, 0.2),
                 inset -1px 0 alpha(black, 0.08);
-}
-
-/* Single button */
-
-.linked .button:only-child:active,
-.linked .button:only-child:active:hover,
-
-.toolbar .button.raised.linked:only-child:active,
-.toolbar .raised.linked .button:only-child:active,
-.toolbar .button.raised.linked:only-child:active:hover,
-.toolbar .raised.linked .button:only-child:active:hover,
-
-.primary-toolbar .linked .button:only-child:active,
-.primary-toolbar .linked .button:only-child:active:hover,
-
-.primary-toolbar .button.raised.linked:only-child:active,
-.primary-toolbar .raised.linked .button:only-child:active,
-.primary-toolbar .button.raised.linked:only-child:active:hover,
-.primary-toolbar .raised.linked .button:only-child:active:hover,
-
-.inline-toolbar.toolbar .button:only-child:active,
-.inline-toolbar.toolbar .button:only-child:active:hover,
-
-.inline-toolbar.toolbar GtkToolButton:only-child > .button:active,
-.inline-toolbar.toolbar GtkToolButton:only-child > .button:active:hover {
-    /*box-shadow: inset 0 1px alpha(black, 0.1),
-                inset 0 -1px alpha(black, 0.6),
-                inset 1px 0 alpha(black, 0.8),
-                inset -1px 0 alpha(black, 0.8);*/
 }
 
 /********************************************
@@ -628,17 +589,7 @@ GtkSwitch.slider:insensitive {
 /* Middle Button */
 
 .linked .button:insensitive,
-
-.toolbar .button.raised.linked:insensitive,
-.toolbar .raised.linked .button:insensitive,
-
-.primary-toolbar .linked .button:insensitive,
-
-.primary-toolbar .button.raised.linked:insensitive,
-.primary-toolbar .raised.linked .button:insensitive,
-
 .inline-toolbar.toolbar .button:insensitive,
-
 .inline-toolbar.toolbar GtkToolButton > .button:insensitive {
     box-shadow: inset 0 1px alpha(white, 0.3),
                 inset 0 -1px alpha(white, 0.06),
@@ -649,17 +600,7 @@ GtkSwitch.slider:insensitive {
 /* Leftmost button */
 
 .linked .button:first-child:insensitive,
-
-.toolbar .button.raised.linked:first-child:insensitive,
-.toolbar .raised.linked .button:first-child:insensitive,
-
-.primary-toolbar .linked .button:first-child:insensitive,
-
-.primary-toolbar .button.raised.linked:first-child:insensitive,
-.primary-toolbar .raised.linked .button:first-child:insensitive, 
-
 .inline-toolbar.toolbar .button:first-child:insensitive,
-
 .inline-toolbar.toolbar GtkToolButton:first-child > .button:insensitive {
     box-shadow: inset 0 1px alpha(white, 0.3),
                 inset 0 -1px alpha(white, 0.06),
@@ -670,17 +611,7 @@ GtkSwitch.slider:insensitive {
 /* Rightmost button */
 
 .linked .button:last-child:insensitive,
-
-.toolbar .button.raised.linked:last-child:insensitive,
-.toolbar .raised.linked .button:last-child:insensitive,
-
-.primary-toolbar .linked .button:last-child:insensitive,
-
-.primary-toolbar .button.raised.linked:last-child:insensitive,
-.primary-toolbar .raised.linked .button:last-child:insensitive, 
-
 .inline-toolbar.toolbar .button:last-child:insensitive,
-
 .inline-toolbar.toolbar GtkToolButton:last-child > .button:insensitive {
     box-shadow: inset 0 1px alpha(white, 0.3),
                 inset 0 -1px alpha(white, 0.06),
@@ -688,23 +619,125 @@ GtkSwitch.slider:insensitive {
                 inset -1px 0 alpha(white, 0.15);
 }
 
+/***********************************************************
+ * Tool/Headarbar linked borders and shadows - Nomal/Hover *
+ ***********************************************************/
+ 
+/* Middle Button */
+
+.header-bar .linked .button,
+.header-bar .linked .button:hover,
+.primary-toolbar .linked .button,
+.primary-toolbar .linked .button:hover,
+.primary-toolbar .button.raised.linked,
+.primary-toolbar .raised.linked .button,
+.primary-toolbar .button.raised.linked:hover,
+.primary-toolbar .raised.linked .button:hover {
+    border-right-width: 0;
+    border-left-width: 1px;
+    border-radius: 0;
+    box-shadow: inset 0 1px white,
+                inset 0 -1px alpha(white, 0.1),
+                inset 1px 0 alpha(white, 0.2),
+                inset -1px 0 alpha(white, 0.2),
+                0 1px alpha(white, 0.3);
+}
+
+/* Leftmost button */
+
+.header-bar .linked .button:first-child,
+.header-bar .linked .button:hover:first-child,
+.primary-toolbar .linked .button:first-child,
+.primary-toolbar .linked .button:first-child:hover,
+.primary-toolbar .button.raised.linked:first-child,
+.primary-toolbar .raised.linked .button:first-child,
+.primary-toolbar .button.raised.linked:first-child:hover,
+.primary-toolbar .raised.linked .button:first-child:hover {
+    border-left-width: 1px;
+    border-right-width: 0;
+    border-radius: 4px 0 0 4px;
+    box-shadow: 0 1px alpha(white, 0.3),
+                inset 0 1px white,
+                inset 0 -1px alpha(white, 0.1),
+                inset 1px 0 alpha(white, 0.2),
+                inset -1px 0 alpha(white, 0.2);
+}
+
+/* Rightmost button */
+
+.header-bar .linked .button:last-child,
+.header-bar .linked .button:last-child:hover,
+.primary-toolbar .linked .button:last-child,
+.primary-toolbar .linked .button:last-child:hover,
+.primary-toolbar .button.raised.linked:last-child,
+.primary-toolbar .raised.linked .button:last-child,
+.primary-toolbar .button.raised.linked:last-child:hover,
+.primary-toolbar .raised.linked .button:last-child:hover {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 1px alpha(white, 0.3),
+                inset 0 1px white,
+                inset 0 -1px alpha(white, 0.1),
+                inset 1px 0 alpha(white, 0.2),
+                inset -1px 0 alpha(white, 0.2);
+}
+
 /* Single button */
 
-.linked .button:only-child:insensitive,
+.header-bar .linked .button:only-child,
+.header-bar .linked .button:only-child:hover,
+.primary-toolbar .linked .button:only-child,
+.primary-toolbar .linked .button:only-child:hover,
+.primary-toolbar .button.raised.linked:only-child,
+.primary-toolbar .raised.linked .button:only-child,
+.primary-toolbar .button.raised.linked:only-child:hover,
+.primary-toolbar .raised.linked .button:only-child:hover {
+    border-style: solid;
+    border-radius: 4px;
+    box-shadow: 0 1px alpha(white, 0.3),
+                inset 0 1px white,
+                inset 0 -1px alpha(white, 0.1),
+                inset 1px 0 alpha(white, 0.2),
+                inset -1px 0 alpha(white, 0.2);
+}
 
-.toolbar .button.raised.linked:only-child:insensitive,
-.toolbar .raised.linked .button:only-child:insensitive,
+/******************************************************
+ * Tool/Headarbar linked borders and shadows - Active *
+ ******************************************************/
+ 
+.header-bar .linked .button:active,
+.header-bar .linked .button:active:hover,
+.header-bar .linked .button:checked,
+.header-bar .linked .button:checked:hover,
+.primary-toolbar .linked .button:active,
+.primary-toolbar .linked .button:active:hover,
+.primary-toolbar .linked .button:checked,
+.primary-toolbar .linked .button:checked:hover,
+.primary-toolbar .button.raised.linked:active,
+.primary-toolbar .raised.linked .button:active,
+.primary-toolbar .button.raised.linked:active:hover,
+.primary-toolbar .raised.linked .button:active:hover,
+.primary-toolbar .button.raised.linked:checked,
+.primary-toolbar .raised.linked .button:checked,
+.primary-toolbar .button.raised.linked:checked:hover,
+.primary-toolbar .raised.linked .button:checked:hover {
+    box-shadow: inset 0 1px alpha(black, 0.1),
+                inset 1px 0 alpha(black, 0.08),
+                inset -1px 0 alpha(black, 0.08),
+                inset 0 -1px alpha(black, 0.06),
+                0 1px alpha(white, 0.5);
+}
 
-.primary-toolbar .linked .button:only-child:insensitive,
-
-.primary-toolbar .button.raised.linked:only-child:insensitive,
-.primary-toolbar .raised.linked .button:only-child:insensitive, 
-
-.inline-toolbar.toolbar .button:only-child:insensitive,
-
-.inline-toolbar.toolbar GtkToolButton:only-child > .button:insensitive {
+/***********************************************************
+ * Tool/Headarbar linked borders and shadows - Insensitive *
+ ***********************************************************/
+.header-bar .linked .button:insensitive,
+.primary-toolbar .linked .button:insensitive,
+.primary-toolbar .button.raised.linked:insensitive,
+.primary-toolbar .raised.linked .button:insensitive {
     box-shadow: inset 0 1px alpha(white, 0.3),
-                inset 0 -1px alpha(white, 0.06),
+                inset -1px 0 alpha(white, 0.15),
                 inset 1px 0 alpha(white, 0.15),
-                inset -1px 0 alpha(white, 0.15);
+                0 1px alpha(white, 0.1);
 }
