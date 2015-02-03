@@ -123,19 +123,25 @@ GtkAssistant .sidebar {
 }
 
 .header-bar .button.text-button {
-    padding: 4px 16px;
+    padding: 6px 16px;
 }
 
-.primary-toolbar .button.image-button {
+.primary-toolbar .button {
     padding: 6px;
 }
 
-.primary-toolbar .button.text-button {
+.primary-toolbar .button.image-button,
+.path-bar .button.image-button {
+    padding: 6px;
+}
+
+.primary-toolbar .button.text-button,
+.path-bar .button {
     padding: 6px 16px;
 }
 
 .stack-switcher > .button.text-button {
-      padding: 5px 10px 6px; 
+      padding: 6px 10px 6px; 
 }
 
 GtkComboBox .button {
@@ -1832,7 +1838,7 @@ GtkMenuButton .menuitem.separator {
 }
 
 .spinbutton.vertical .button {
-    border: 1px solid @button_border;
+    border: 1px solid @border;
     border-image: none;
     box-shadow: none;
 }
@@ -1849,14 +1855,14 @@ GtkMenuButton .menuitem.separator {
     border-style: solid;
     border-width: 0 1px 0 1px;
     border-radius: 0;
-    border-color: @button_border;
+    border-color: @border;
     border-image: none;
     box-shadow: 0 1px alpha(black, 0.1);
 }
 
 .spinbutton.vertical .button:insensitive,
 .spinbutton.vertical.entry:insensitive {
-    border-color: @button_insensitive_border;
+    border-color: shade(@border, 1.1);
 }
 
 /***********
@@ -1914,13 +1920,11 @@ GtkStatusbar {
 
 GtkSwitch {
     -GtkSwitch-slider-width: 40px;
-    /*font: bold condensed 9;*/
     font-weight: bold;
     font-size: smaller;
 }
 
 GtkSwitch.trough {
-    /*padding: 1px;*/
     color: @button_fg;
     text-shadow: 0 1px @button_text_shadow;
 }
@@ -1986,7 +1990,7 @@ GtkTextView {
 .primary-toolbar .toolbar,
 .primary-toolbar.toolbar {
     -GtkWidget-window-dragging: true;
-    padding-top: 3px;
+    padding-top: 4px;
     padding-bottom: 5px;
     border-style: solid;
     border-width: 0 0 1px 0;

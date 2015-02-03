@@ -18,11 +18,6 @@
 
 /* Buttons */
 
-@define-color button_border shade(@theme_bg_color, 0.7);
-@define-color button_insensitive_border shade(@theme_bg_color, 0.85);
-@define-color button_active_border shade(@theme_bg_color, 0.6);
-@define-color button_insensitive_active_border shade(@theme_bg_color, 0.7);
-
 @define-color button_bg_a shade(@theme_bg_color, 1.16);
 @define-color button_bg_b shade(@theme_bg_color, 0.98);
 
