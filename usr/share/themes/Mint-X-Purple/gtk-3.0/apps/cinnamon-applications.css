@@ -10,7 +10,6 @@
 
 NemoWindow .sidebar .view {
     -GtkWidget-focus-padding: 0;
-    -GtkWidget-focus-line-width: 1;
     -GtkTreeView-vertical-separator: 0;
     background-color: @nemo_sidebar_bg;
     color: @nemo_sidebar_fg;
@@ -105,21 +104,22 @@ NemoNotebook.notebook tab:active {
 
 /* small buttons on the nemo status bar */
 
-NemoWindow GtkStatusbar {
-    padding: 0;
+NemoWindow .toolbar .button.image-button {
+    padding: 0 6px;
 }
 
-NemoWindow .toolbar .button.image-button {
-    -GtkWidget-focus-line-width: 0;
-    -GtkWidget-focus-padding: 0;
-    padding: 4px;
+NemoWindow .toolbar GtkStatusbar {
 }
 
 /* the fix above for the statusbar buttons also affects the primary toolbar so we need to reset the
     padding for those buttons */
 
 NemoWindow .primary-toolbar.toolbar .button.image-button {
-    padding: 4px 7px 5px;
+    padding: 0 7px;
+}
+
+NemoWindow .primary-toolbar.toolbar .entry {
+    padding: 3px;
 }
 
 /*********************
