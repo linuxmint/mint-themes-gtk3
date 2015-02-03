@@ -1,3 +1,11 @@
+mint-themes-gtk3 (3.14+2) betsy; urgency=medium
+
+  * Added missing ${misc:Depends}
+  * A few tweaks, add some missing style classes and improve the GtkFileChooser pathbar
+  * Updated all the color variations
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 03 Feb 2015 09:11:48 +0100
+
 mint-themes-gtk3 (3.14-1) betsy; urgency=medium
 
   * Fixes for GTK 3.14
