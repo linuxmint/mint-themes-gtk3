@@ -8,6 +8,7 @@ GtkComboBox .button,
 .header-bar GtkComboBox .button,
 /*.header-bar .titlebutton.button:hover,*/
 /*.titlebar .titlebutton.button:hover,*/
+.header-bar.titlebar GtkMenuButton.button.titlebutton:hover,
 .inline-toolbar GtkToolButton > .button {
     background-color: transparent;
     background-image: linear-gradient(to bottom,
@@ -21,14 +22,16 @@ GtkComboBox .button,
 .titlebar .titlebutton.button,
 .titlebar .titlebutton.button:hover,
 .titlebar .titlebutton.button:active,
-.titlebar .titlebutton.button:checked {
+.titlebar .titlebutton.button:checked,
+.titlebar .titlebutton.button:backdrop,
+.header-bar.titlebar GtkMenuButton.button.titlebutton {
     background-color: transparent;
     background-image: none;
 }
 
-/*.titlebar .titlebutton.flat {
-    background-color: red;
+/*.header-bar.titlebar GtkMenuButton.button.titlebutton {
     background-image: none;
+    background-color: red;
 }*/
 
 .primary-toolbar .raised .button,
@@ -58,6 +61,8 @@ GtkComboBox .button,
 .button:checked,
 /*.header-bar .titlebutton.button:checked,
 .titlebar .titlebutton.button:checked,*/
+.header-bar.titlebar GtkMenuButton.button.titlebutton:active,
+.header-bar.titlebar GtkMenuButton.button.titlebutton:checked,
 .primary-toolbar .raised .button:active,
 .primary-toolbar .raised .button:checked,
 .primary-toolbar .button.raised:active,
@@ -75,6 +80,8 @@ GtkComboBox .button,
 .titlebar .titlebutton.button:checked:hover,
 .header-bar .titlebutton.button:active:hover,
 .titlebar .titlebutton.button:active:hover,*/
+.header-bar.titlebar GtkMenuButton.button.titlebutton:active:hover,
+.header-bar.titlebar GtkMenuButton.button.titlebutton:checked:hover,
 .primary-toolbar .raised .button:active:hover,
 .primary-toolbar .raised .button:checked:hover,
 .primary-toolbar .button.raised:active:hover,
@@ -101,6 +108,22 @@ GtkComboBox .button,
     background-image: linear-gradient(to bottom,
                             @button_insensitive_active_bg_a,
                             @button_insensitive_active_bg_b);
+}
+
+.header-bar .button:backdrop {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                            shade(@button_bg_a, 0.95),
+                            @button_bg_b);
+}
+
+.header-bar .button:checked:backdrop,
+.header-bar .button:active:backdrop {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+                            shade(@button_active_bg_a, 1.1),
+                            shade(@button_active_bg_b, 1.1) 30%,
+                            shade(@button_active_bg_c, 1.1));
 }
 
 /*****************

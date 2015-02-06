@@ -123,7 +123,8 @@
 .titlebar .titlebutton.button:hover,
 .titlebar .titlebutton.button:active,
 .titlebar .titlebutton.button:active:hover,
-.titlebar .titlebutton.button:checked {
+.titlebar .titlebutton.button:checked,
+.titlebar .titlebutton.button:backdrop {
     border: none;
     box-shadow: none;
 }
@@ -135,6 +136,7 @@
 .titlebar .titlebutton.button:active,
 .titlebar .titlebutton.button:checked,*/
 .header-bar .button.flat,
+.header-bar.titlebar GtkMenuButton.button.titlebutton,
 .primary-toolbar .button.flat,
 .primary-toolbar .button.flat:insensitive {
     border-style: solid;
@@ -151,6 +153,8 @@
 .header-bar .titlebutton.button:hover,*/
 /*.titlebar .titlebutton.raised,
 .titlebar .titlebutton.button:hover,*/
+
+.header-bar.titlebar GtkMenuButton.button.titlebutton:hover,
 .primary-toolbar .button,
 .primary-toolbar .button:hover,
 .primary-toolbar .button.flat:hover,
@@ -181,6 +185,10 @@
 .header-bar .titlebutton.button:active:hover,*/
 /*.titlebar .titlebutton.button:active,
 .titlebar .titlebutton.button:active:hover,*/
+.header-bar.titlebar GtkMenuButton.button.titlebutton:checked,
+.header-bar.titlebar GtkMenuButton.button.titlebutton:checked:hover,
+.header-bar.titlebar GtkMenuButton.button.titlebutton:active,
+.header-bar.titlebar GtkMenuButton.button.titlebutton:active:hover,
 .primary-toolbar .button:checked,
 .primary-toolbar .button:checked:hover,
 .primary-toolbar .button:active,
@@ -205,6 +213,7 @@
 }
 
 .header-bar .button:insensitive,
+.header-bar .button:backdrop,
 /*.header-bar .titlebutton.button.raised:insensitive,
 .titlebar .titlebutton.raised:insensitive,*/
 .primary-toolbar .button:insensitive,
@@ -838,11 +847,12 @@ GtkSwitch.slider:insensitive {
 /* Middle button */
 
 .header-bar .linked .button:insensitive,
+.header-bar .linked .button:backdrop,
 .primary-toolbar .linked .button:insensitive,
 .primary-toolbar .button.raised.linked:insensitive,
 .primary-toolbar .raised.linked .button:insensitive {
     box-shadow: inset 0 1px alpha(white, 0.3),
-                inset -1px 0 alpha(white, 0.2),
+                inset -1px 0 alpha(black, 0.15),
                 inset 1px 0 alpha(white, 0.15),
                 inset 0 -1px alpha(white, 0.06);
 }
@@ -850,11 +860,12 @@ GtkSwitch.slider:insensitive {
 /* Leftmost button */
 
 .header-bar .linked .button:first-child:insensitive,
+.header-bar .linked .button:first-child:backdrop,
 .primary-toolbar .linked .button:first-child:insensitive,
 .primary-toolbar .button.raised.linked:first-child:insensitive,
 .primary-toolbar .raised.linked .button:first-child:insensitive {
     box-shadow: inset 0 1px alpha(white, 0.3),
-                inset -1px 0 alpha(black, 0.2),
+                inset -1px 0 alpha(black, 0.15),
                 inset 1px 0 alpha(white, 0.15),
                 inset 0 -1px alpha(white, 0.06);
 }
@@ -862,6 +873,7 @@ GtkSwitch.slider:insensitive {
 /* Rightmost button */
 
 .header-bar .linked .button:last-child:insensitive,
+.header-bar .linked .button:last-child:backdrop,
 .primary-toolbar .linked .button:last-child:insensitive,
 .primary-toolbar .button.raised.linked:last-child:insensitive,
 .primary-toolbar .raised.linked .button:last-child:insensitive {
@@ -874,6 +886,7 @@ GtkSwitch.slider:insensitive {
 /* Single button */
 
 .header-bar .linked .button:only-child:insensitive,
+.header-bar .linked .button:only-child:backdrop,
 .primary-toolbar .linked .button:only-child:insensitive,
 .primary-toolbar .button.raised.linked:only-child:insensitive,
 .primary-toolbar .raised.linked .button:only-child:insensitive {
@@ -881,4 +894,60 @@ GtkSwitch.slider:insensitive {
                 inset -1px 0 alpha(white, 0.15),
                 inset 1px 0 alpha(white, 0.15),
                 inset 0 -1px alpha(white, 0.06);
+}
+
+/******************************************************************
+ * Tool/Headarbar linked borders and shadows - Active Insensitive *
+ *****************************************************************/
+
+/* Middle button */
+
+.header-bar .linked .button:insensitive:checked,
+.header-bar .linked .button:checked:backdrop,
+.primary-toolbar .linked .button:checked:insensitive,
+.primary-toolbar .button.raised.linked:checked:insensitive,
+.primary-toolbar .raised.linked .button:checked:insensitive {
+    box-shadow: inset 0 1px alpha(black, 0.05),
+                inset -1px 0 alpha(black, 0.15),
+                inset 1px 0 alpha(black, 0.05),
+                inset 0 -1px alpha(black, 0.02);
+}
+
+/* Leftmost button */
+
+.header-bar .linked .button:first-child:insensitive,
+.header-bar .linked .button:first-child:backdrop,
+.primary-toolbar .linked .button:first-child:insensitive,
+.primary-toolbar .button.raised.linked:first-child:insensitive,
+.primary-toolbar .raised.linked .button:first-child:insensitive {
+    box-shadow: inset 0 1px alpha(black, 0.05),
+                inset -1px 0 alpha(black, 0.15),
+                inset 1px 0 alpha(black, 0.05),
+                inset 0 -1px alpha(black, 0.02);
+}
+
+/* Rightmost button */
+
+.header-bar .linked .button:last-child:insensitive,
+.header-bar .linked .button:last-child:backdrop,
+.primary-toolbar .linked .button:last-child:insensitive,
+.primary-toolbar .button.raised.linked:last-child:insensitive,
+.primary-toolbar .raised.linked .button:last-child:insensitive {
+    box-shadow: inset 0 1px alpha(black, 0.05),
+                inset -1px 0 alpha(black, 0.05),
+                inset 1px 0 alpha(black, 0.05),
+                inset 0 -1px alpha(black, 0.02);
+}
+
+/* Single button */
+
+.header-bar .linked .button:only-child:insensitive,
+.header-bar .linked .button:only-child:backdrop,
+.primary-toolbar .linked .button:only-child:insensitive,
+.primary-toolbar .button.raised.linked:only-child:insensitive,
+.primary-toolbar .raised.linked .button:only-child:insensitive {
+    box-shadow: inset 0 1px alpha(black, 0.05),
+                inset 1px 0 alpha(black, 0.02),
+                inset -1px 0 alpha(black, 0.02),
+                inset 0 -1px alpha(black, 0.01);
 }
