@@ -102,6 +102,9 @@
 @define-color toolbar_bg_a @theme_bg_color;
 @define-color toolbar_bg_b shade(@theme_bg_color, 0.88);
 
+@define-color headerbar_bg_a shade(@theme_bg_color, 1.08);
+@define-color headerbar_bg_b shade(@theme_bg_color, 1.0);
+
 @define-color inline_toolbar_bg_a shade(@theme_bg_color, 0.93);
 @define-color inline_toolbar_bg_b @theme_bg_color;
 
