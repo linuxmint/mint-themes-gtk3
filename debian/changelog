@@ -1,3 +1,9 @@
+mint-themes-gtk3 (3.14+4) betsy; urgency=medium
+
+  * Restyled CSD header bars to better match standard titlebars
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 14 Feb 2015 16:22:35 +0100
+
 mint-themes-gtk3 (3.14+3) betsy; urgency=medium
 
   * Added missing null.png in colored themes (GTK 3.14)
