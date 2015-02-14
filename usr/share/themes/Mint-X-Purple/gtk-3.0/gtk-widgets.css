@@ -47,6 +47,8 @@
     -GtkWindow-resize-grip-height: 0
 
     -WnckTasklist-fade-overlay-rect: 0;
+
+    -gtk-icon-style: regular; /* disable symbolic icons */
 }
 
 .background {
