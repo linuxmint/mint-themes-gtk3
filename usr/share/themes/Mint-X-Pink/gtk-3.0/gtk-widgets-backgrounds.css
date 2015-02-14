@@ -6,8 +6,7 @@
 .button.flat:hover,
 GtkComboBox .button,
 .header-bar GtkComboBox .button,
-.header-bar .titlebutton.button:hover,
-.titlebar .titlebutton.button:hover,
+.header-bar.titlebar GtkMenuButton.button.titlebutton:hover,
 .inline-toolbar GtkToolButton > .button {
     background-color: transparent;
     background-image: linear-gradient(to bottom,
@@ -18,7 +17,11 @@ GtkComboBox .button,
 .button.flat,
 .button.flat:insensitive,
 .header-bar .titlebutton.button,
-.titlebar .titlebutton.button {
+.titlebar .titlebutton.button,
+.titlebar .titlebutton.button:hover,
+.titlebar .titlebutton.button:active,
+.titlebar .titlebutton.button:checked,
+.header-bar.titlebar GtkMenuButton.button.titlebutton {
     background-color: transparent;
     background-image: none;
 }
@@ -48,8 +51,8 @@ GtkComboBox .button,
 
 .button:active,
 .button:checked,
-.header-bar .titlebutton.button:checked,
-.titlebar .titlebutton.button:checked,
+.header-bar.titlebar GtkMenuButton.button.titlebutton:active,
+.header-bar.titlebar GtkMenuButton.button.titlebutton:checked,
 .primary-toolbar .raised .button:active,
 .primary-toolbar .raised .button:checked,
 .primary-toolbar .button.raised:active,
@@ -63,10 +66,8 @@ GtkComboBox .button,
 
 .button:active:hover,
 .button:checked:hover,
-.header-bar .titlebutton.button:checked:hover,
-.titlebar .titlebutton.button:checked:hover,
-.header-bar .titlebutton.button:active:hover,
-.titlebar .titlebutton.button:active:hover,
+.header-bar.titlebar GtkMenuButton.button.titlebutton:active:hover,
+.header-bar.titlebar GtkMenuButton.button.titlebutton:checked:hover,
 .primary-toolbar .raised .button:active:hover,
 .primary-toolbar .raised .button:checked:hover,
 .primary-toolbar .button.raised:active:hover,
