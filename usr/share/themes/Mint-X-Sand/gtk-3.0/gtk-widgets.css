@@ -47,8 +47,6 @@
     -GtkWindow-resize-grip-height: 0
 
     -WnckTasklist-fade-overlay-rect: 0;
-
-    -gtk-icon-style: regular; /* disable symbolic icons */
 }
 
 .background {
@@ -1822,6 +1820,18 @@ GtkMenuButton .menuitem.separator {
 .sidebar .view,
 .sidebar GtkScrolledWindow {
     background-color: @sidebar_bg;
+}
+
+.sidebar .view {
+    -gtk-icon-style: regular;
+}
+
+.sidebar .cell {
+    padding: 1px;
+}
+
+GtkPlacesSidebar .cell {
+    padding: 0;
 }
 
 .sidebar .scrollbar {
