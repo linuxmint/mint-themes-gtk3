@@ -1,3 +1,9 @@
+mint-themes-gtk3 (3.14+6) betsy; urgency=medium
+
+  * Only force non-symbolic icons in sidebar treeviews and tweak the padding values of those widgets.
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sun, 15 Feb 2015 15:49:52 +0100
+
 mint-themes-gtk3 (3.14+5) betsy; urgency=medium
 
   * Disabled symbolic icons
