@@ -641,8 +641,10 @@ GtkSwitch.slider:insensitive {
 .primary-toolbar .linked .button:hover,
 .primary-toolbar .button.raised.linked,
 .primary-toolbar .raised.linked .button,
+.primary-toolbar .raised .linked .button,
 .primary-toolbar .button.raised.linked:hover,
-.primary-toolbar .raised.linked .button:hover {
+.primary-toolbar .raised.linked .button:hover,
+.primary-toolbar .raised .linked .button:hover {
     border-right-width: 0;
     border-left-width: 0;
     border-radius: 0;
