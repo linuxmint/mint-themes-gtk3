@@ -105,7 +105,7 @@ NemoNotebook.notebook tab:active {
 /* small buttons on the nemo status bar */
 
 NemoWindow .toolbar .button.image-button {
-    padding: 0 6px;
+    padding: 0 5px;
 }
 
 NemoWindow .toolbar GtkStatusbar {
