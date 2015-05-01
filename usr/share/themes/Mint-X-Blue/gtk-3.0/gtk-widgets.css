@@ -153,6 +153,21 @@ GtkComboBox .button {
     icon-shadow: none;
 }
 
+.primary-toolbar.toolbar .button.image-button {
+    color: #404040;
+    icon-shadow: 0 1px alpha(white, 0.9);
+}
+
+.primary-toolbar.toolbar .button.image-button:active,
+.primary-toolbar.toolbar .button.image-button:active:hover {
+    icon-shadow: 0 1px alpha(white, 0.4);
+}
+
+.primary-toolbar.toolbar .button.image-button:insensitive {
+    color: @insensitive_fg_color;
+    icon-shadow: none;
+}
+
 GtkLinkButton.button,
 GtkLinkButton.button:active {
     text-shadow: none;
