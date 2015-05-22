@@ -1,3 +1,14 @@
+mint-themes-gtk3 (3.14+7) betsy; urgency=medium
+
+  [ JosephMcc ]
+  * minor: make the nemo statusbar buttons square instead of slightly rectangular
+  * fix the middle active button in Gtk StackSwitcher
+  * 3.14: Tweak styling of list box rows, level bars, and remove bold labels from active GtkStackSwitcher button
+  * use a new style class in cinnamon-settings to theme SettingsBox headers
+  * 3.14: Improve the look of symbolic icons on primary toolbars
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 22 May 2015 13:17:00 +0200
+
 mint-themes-gtk3 (3.14+6) betsy; urgency=medium
 
   * Only force non-symbolic icons in sidebar treeviews and tweak the padding values of those widgets.
