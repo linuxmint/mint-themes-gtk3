@@ -1,3 +1,13 @@
+mint-themes-gtk3 (3.10-9) rafaela; urgency=medium
+
+  [ JosephMcc ]
+  * fix the middle active button on Gtk Stack Swithcer in 3.10
+  * 3.10: update theming for new settings widgets
+  * use a new style class in cinnamon-settings to theme SettingsBox headers
+  * 3.14: Improve the look of symbolic icons on primary toolbars
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 22 May 2015 13:18:04 +0200
+
 mint-themes-gtk3 (3.10-8) rebecca; urgency=medium
 
   * Fixed padding of nemo status bar buttons
