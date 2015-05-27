@@ -1,3 +1,13 @@
+mint-themes-gtk3 (3.10-10) rafaela; urgency=medium
+
+  [ Michael Webster ]
+  * Revert "3.14: Improve the look of symbolic icons on primary toolbars"
+
+  [ JosephMcc ]
+  * tweak the look of primary toolbar symbolic icons a bit in the 3.10 version of the theme
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 27 May 2015 09:52:03 +0200
+
 mint-themes-gtk3 (3.10-9) rafaela; urgency=medium
 
   [ JosephMcc ]
