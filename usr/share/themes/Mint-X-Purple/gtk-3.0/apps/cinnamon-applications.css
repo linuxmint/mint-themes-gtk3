@@ -29,6 +29,14 @@ NemoWindow .sidebar .expander:selected {
     color: @nemo_sidebar_selected_fg;
 }
 
+NemoWindow .overshoot {
+    background-color: alpha (@nemo_sidebar_selected_fg, 0.3);
+}
+
+NemoWindow .undershoot {
+	background-color: transparent;
+}
+
 NemoPlacesTreeView {
     -NemoPlacesTreeView-disk-full-bg-color: shade(@theme_base_color, 0.85);
     -NemoPlacesTreeView-disk-full-fg-color: shade(@theme_selected_bg_color, 0.9);
