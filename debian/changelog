@@ -1,3 +1,10 @@
+mint-themes-gtk3 (3.10+11) rafaela; urgency=medium
+
+  [ JosephMcc ]
+  * 3.10: Add a grey version of the theme
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 26 Jun 2015 09:28:45 +0200
+
 mint-themes-gtk3 (3.10-10) rafaela; urgency=medium
 
   [ Michael Webster ]
