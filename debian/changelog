@@ -1,3 +1,10 @@
+mint-themes-gtk3 (3.10+12) rosa; urgency=medium
+
+  [ JosephMcc ]
+  * 3.10: Fix the gnome calculator context menu in
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 06 Nov 2015 17:50:31 +0000
+
 mint-themes-gtk3 (3.10+11) rafaela; urgency=medium
 
   [ JosephMcc ]
