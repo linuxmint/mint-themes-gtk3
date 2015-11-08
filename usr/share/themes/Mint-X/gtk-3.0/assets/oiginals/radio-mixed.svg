@@ -14,7 +14,7 @@
    height="16"
    id="svg3806"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r"
    sodipodi:docname="radio-mixed.svg">
   <defs
      id="defs3808">
@@ -120,18 +120,18 @@
        x2="8"
        y2="1046.3622"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.89898475,0,0,1.2841042,0.87125657,-296.70767)" />
+       gradientTransform="matrix(0.80000003,0,0,0.99999584,1.5999999,0.00440006)" />
   </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#d6d6d6"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="1"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="31.678384"
-     inkscape:cx="8.0721197"
-     inkscape:cy="7.623733"
+     inkscape:zoom="43.266623"
+     inkscape:cx="0.75422998"
+     inkscape:cy="7.4537954"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -168,7 +168,7 @@
      transform="translate(0,-1036.3622)">
     <path
        transform="matrix(0.92857142,0,0,0.92857245,0.57142866,1037.9336)"
-       d="M 15,8 A 7,7 0 1 1 1,8 7,7 0 1 1 15,8 z"
+       d="M 15,8 A 7,7 0 0 1 8,15 7,7 0 0 1 1,8 7,7 0 0 1 8,1 7,7 0 0 1 15,8 Z"
        sodipodi:ry="7"
        sodipodi:rx="7"
        sodipodi:cy="8"
@@ -184,7 +184,7 @@
        sodipodi:cy="8"
        sodipodi:rx="7"
        sodipodi:ry="7"
-       d="M 15,8 A 7,7 0 1 1 1,8 7,7 0 1 1 15,8 z"
+       d="M 15,8 A 7,7 0 0 1 8,15 7,7 0 0 1 1,8 7,7 0 0 1 8,1 7,7 0 0 1 15,8 Z"
        transform="matrix(0.92857142,0,0,0.92857245,0.57142862,1036.9336)" />
     <path
        sodipodi:type="arc"
@@ -194,7 +194,7 @@
        sodipodi:cy="8"
        sodipodi:rx="5"
        sodipodi:ry="5"
-       d="M 14,8 A 5,5 0 1 1 4,8 5,5 0 1 1 14,8 z"
+       d="M 14,8 A 5,5 0 0 1 9,13 5,5 0 0 1 4,8 5,5 0 0 1 9,3 5,5 0 0 1 14,8 Z"
        transform="matrix(1.1,0,0,1.1,-1.9,1035.5622)" />
     <path
        sodipodi:type="arc"
@@ -204,21 +204,21 @@
        sodipodi:cy="8"
        sodipodi:rx="7"
        sodipodi:ry="7"
-       d="M 15,8 A 7,7 0 1 1 1,8 7,7 0 1 1 15,8 z"
+       d="M 15,8 A 7,7 0 0 1 8,15 7,7 0 0 1 1,8 7,7 0 0 1 8,1 7,7 0 0 1 15,8 Z"
        transform="matrix(0.85714286,0,0,0.8571449,1.1428571,1037.505)" />
     <rect
-       y="1041.7939"
-       x="3.5682108"
-       height="5.1364384"
-       width="8.9898472"
+       y="1042.3622"
+       x="4"
+       height="4"
+       width="8"
        id="rect4420"
        style="fill:url(#linearGradient4428);fill-opacity:1;stroke:none" />
     <rect
        style="fill:#f5f5f5;fill-opacity:1;stroke:none"
        id="rect4418"
-       width="7.1476841"
-       height="3.0101528"
-       x="4.4103742"
-       y="1042.8256" />
+       width="6"
+       height="2"
+       x="5"
+       y="1043.3622" />
   </g>
 </svg>
