@@ -1,3 +1,10 @@
+mint-themes-gtk3 (3.10+13) rosa; urgency=medium
+
+  [ Yan Pashkovsky ]
+  * Minus tick is not bluury anymore
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 25 Nov 2015 13:10:59 +0000
+
 mint-themes-gtk3 (3.10+12) rosa; urgency=medium
 
   [ JosephMcc ]
