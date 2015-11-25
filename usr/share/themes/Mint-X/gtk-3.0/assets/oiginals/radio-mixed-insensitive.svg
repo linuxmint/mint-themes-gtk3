@@ -14,8 +14,11 @@
    height="16"
    id="svg3806"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="radio-mixed-insensitive.svg">
+   inkscape:version="0.91 r"
+   sodipodi:docname="radio-mixed-insensitive.svg"
+   inkscape:export-filename="/home/yanpas/Документы/github/etc/minus/radio-mixed-insensitive.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs3808">
     <linearGradient
@@ -118,12 +121,12 @@
      id="base"
      pagecolor="#d6d6d6"
      bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="1"
+     borderopacity="0"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="31.678384"
-     inkscape:cx="8.0828295"
-     inkscape:cy="7.623733"
+     inkscape:zoom="41.75"
+     inkscape:cx="8"
+     inkscape:cy="7.497464"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -161,7 +164,7 @@
      transform="translate(0,-1036.3622)">
     <path
        transform="matrix(0.92857142,0,0,0.92857245,0.57142866,1037.9336)"
-       d="m 15,8 c 0,3.865993 -3.134007,7 -7,7 C 4.1340068,15 1,11.865993 1,8 1,4.1340068 4.1340068,1 8,1 c 3.865993,0 7,3.1340068 7,7 z"
+       d="M 15,8 A 7,7 0 0 1 8,15 7,7 0 0 1 1,8 7,7 0 0 1 8,1 7,7 0 0 1 15,8 Z"
        sodipodi:ry="7"
        sodipodi:rx="7"
        sodipodi:cy="8"
@@ -177,11 +180,11 @@
        sodipodi:cy="8"
        sodipodi:rx="7"
        sodipodi:ry="7"
-       d="m 15,8 c 0,3.865993 -3.134007,7 -7,7 C 4.1340068,15 1,11.865993 1,8 1,4.1340068 4.1340068,1 8,1 c 3.865993,0 7,3.1340068 7,7 z"
+       d="M 15,8 A 7,7 0 0 1 8,15 7,7 0 0 1 1,8 7,7 0 0 1 8,1 7,7 0 0 1 15,8 Z"
        transform="matrix(0.92857142,0,0,0.92857245,0.57142862,1036.9336)" />
     <path
        transform="matrix(0.85714286,0,0,0.85714599,1.1428571,1037.505)"
-       d="M 15,8 A 7,7 0 1 1 1,8 7,7 0 1 1 15,8 z"
+       d="M 15,8 A 7,7 0 0 1 8,15 7,7 0 0 1 1,8 7,7 0 0 1 8,1 7,7 0 0 1 15,8 Z"
        sodipodi:ry="7"
        sodipodi:rx="7"
        sodipodi:cy="8"
@@ -192,9 +195,9 @@
     <rect
        style="fill:#b2b2b2;fill-opacity:1;stroke:none"
        id="rect3900"
-       width="7.0315676"
+       width="6"
        height="2.0000174"
-       x="4.4735088"
+       x="5"
        y="1043.3622" />
   </g>
 </svg>
