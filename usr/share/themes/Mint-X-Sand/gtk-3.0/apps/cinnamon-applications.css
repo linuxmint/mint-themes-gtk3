@@ -46,10 +46,9 @@ NemoWindow .sidebar .scrollbar {
     -GtkRange-slider-width: 10;
 }
 
-/*NemoWindow .sidebar .scrollbar.slider {
-    background-color: shade(@nemo_sidebar_bg, 1.1);
-    background-image: none;
-}*/
+NemoWindow .sidebar .scrollbar.overlay-indicator:not(.dragging):not(.hovering) .slider {
+    background-color: @theme_bg_color;
+}
 
 NemoWindow .sidebar .frame {
     border: none;
