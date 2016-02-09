@@ -16,6 +16,8 @@ GtkComboBox .button,
 
 .button.flat,
 .button.flat:insensitive,
+.sidebar-button.button,
+.sidebar-button.button:insensitive,
 .header-bar .titlebutton.button,
 .titlebar .titlebutton.button,
 .titlebar .titlebutton.button:hover,

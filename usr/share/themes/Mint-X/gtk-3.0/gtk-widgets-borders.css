@@ -4,6 +4,7 @@
 
 .button,
 .button.flat:hover,
+.sidebar-button.button:hover,
 .dialog-action-area.linked .button:first-child,
 .dialog-action-area.linked .button:hover:first-child,
 .dialog-action-area.linked .button,
@@ -24,7 +25,9 @@
 }
 
 .button.flat,
-.button.flat:insensitive {
+.button.flat:insensitive,
+.sidebar-button.button,
+.sidebar-button.button:insensitive {
     border-color: transparent;
     border-image: none;
     box-shadow: none;
@@ -36,6 +39,8 @@
 .button.flat:active,
 .button.flat:checked:hover,
 .button.flat:active:hover,
+.sidebar-button.button:checked:hover,
+.sidebar-button.button:active:hover,
 .inline-toolbar GtkToolButton > .button:active,
 .inline-toolbar GtkToolButton > .button:checked,
 .inline-toolbar.toolbar .button:active,
