@@ -1866,11 +1866,8 @@ GtkComboBox .separator {
 
 .menuitem.separator,
 GtkMenuButton .menuitem.separator {
-    -GtkWidget-wide-separators: true;
-    -GtkWidget-separator-height: 2;
-    border: 1px solid transparent;
-    border-top-color: alpha(black, 0.08);
-    border-bottom-color: alpha(white, 0.85);
+    -GtkWidget-wide-separators: 0;
+    color: alpha(black, 0.08);
 }
 
 .primary-toolbar GtkSeparatorToolItem,
