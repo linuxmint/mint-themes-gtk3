@@ -111,6 +111,10 @@ GtkAssistant .sidebar {
     padding: 4px;
 }
 
+.dialog-action-area .button.text-button {
+    padding: 6px 16px;
+}
+
 .button.text-button {
     padding: 4px 16px;
 }
@@ -544,15 +548,6 @@ GtkDrawingArea {
 /***********
  * Dialogs *
  ***********/
-
-/*.message-dialog {
-    -GtkDialog-button-spacing: 8;
-}
-
-.message-dialog .dialog-action-area .button {
-    padding: 4px;
-    margin: 4px;
-}*/
 
 /*********
  * entry *
@@ -1555,63 +1550,65 @@ GtkProgressBar {
  *********/
 
 .scale {
-    -GtkRange-slider-width: 15;
-    -GtkScale-slider-length: 15;
-    -GtkRange-trough-border: 0;
+    -GtkRange-slider-width: 16;
+    -GtkScale-slider-length: 16;
+    -GtkRange-trough-border: 2;
 }
 
 .scale.slider {
-    border: none;
-    background-color: transparent;
-    background-size: 15px 15px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    color: transparent;
+    border: 1px solid @border;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom,
+                                      shade(@button_bg_a, 1.1),
+                                      shade(@button_bg_b, 1.1));
+}
+
+.scale.slider:insensitive {
+    border-color: shade(@border, 1.1);
+    background-image: linear-gradient(to bottom,
+                                      shade(@theme_bg_color, 1.05),
+                                      @theme_bg_color);
 }
 
 .scale.slider.fine-tune:active,
 .scale.slider.fine-tune:active:hover,
 .scale.slider.fine-tune.horizontal:active,
 .scale.slider.fine-tune.horizontal:active:hover {
-    background-size: 75%;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: none;
+    background-color: @theme_selected_bg_color;
 }
 
 .scale.trough {
-    margin: 4px 0;
+    margin: 7px;
 }
 
 .scale.trough.vertical {
-    margin: 0 4px;
+    margin: 7px;
 }
 
 .scale.trough {
-    background-color: transparent;
-    background-image: linear-gradient(to bottom,
-                            @scale_trough_a,
-                            @scale_trough_b);
-    box-shadow: 0 2px alpha(black, 0.05);
+    border: 1px solid @border;
+    background-color: shade(@theme_bg_color, 0.95);
+    background-image: none;
+    box-shadow: inset 1px 1px alpha(black, 0.1),
+                0 1px alpha(white, 0.5);
 }
 
-.primary-toolbar .scale.trough {
-    background-image: linear-gradient(to bottom,
-                            shade(@scale_trough_a, 0.9),
-                            shade(@scale_trough_b, 0.9));
+.primary-toolbar .scale.trough,
+.header-bar .scale.trough {
+    background-color: shade(@theme_bg_color, 0.85);
 }
 
 .scale.trough.vertical {
-    background-color: transparent;
-    background-image: linear-gradient(to right,
-                            @scale_trough_a,
-                            @scale_trough_b);
-    box-shadow: 2px 0 alpha(black, 0.05);
+    background-color: shade(@theme_bg_color, 0.95);
+    background-image: none;
+    box-shadow: inset 1px 1px alpha(black, 0.1),
+                1px 0 alpha(white, 0.5);
 }
 
 .primary-toolbar .scale.trough.vertical {
-    background-image: linear-gradient(to right,
-                            shade(@scale_trough_a, 0.9),
-                            shade(@scale_trough_b, 0.9));
+    background-color: shade(@theme_bg_color, 0.95);
+    background-image: none;
 }
 
 .scale.trough.highlight {
@@ -1632,7 +1629,8 @@ GtkProgressBar {
 .scale.trough.highlight:insensitive,
 .scale.trough.vertical:insensitive,
 .scale.trough.highlight.vertical:insensitive {
-    background-color: @theme_bg_color;
+    border-color: shade(@border, 1.1);
+    background-color: shade(@theme_bg_color, 0.98);
     background-image: none;
     box-shadow: none;                            
 }
@@ -1641,6 +1639,7 @@ GtkProgressBar {
 .primary-toolbar .scale.trough.highlight:insensitive,
 .primary-toolbar .scale.trough.vertical:insensitive,
 .primary-toolbar .scale.trough.highlight.vertical:insensitive {
+    border-color: @border;
     background-color: shade(@theme_bg_color, 0.9);
     background-image: none;
     box-shadow: none;                            
