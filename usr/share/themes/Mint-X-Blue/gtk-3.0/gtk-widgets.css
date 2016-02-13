@@ -821,9 +821,10 @@ GtkScrolledWindow GtkViewport.frame {
 /***************
  * Header Bars *
  ***************/
- 
-.header-bar,
-.titlebar {
+
+.titlebar.header-bar 
+/*.header-bar,
+.titlebar*/ {
     padding: 6px 8px 6px 8px;
     border-style: solid;
     border-width: 0 0 1px 0;
@@ -838,8 +839,9 @@ GtkScrolledWindow GtkViewport.frame {
                 inset 0 1px alpha(white, 0.8);                            
 }
 
-.header-bar:backdrop,
-.titlebar:backdrop {
+.titlebar.header-bar:backdrop
+/*.header-bar:backdrop,
+.titlebar:backdrop*/ {
     background-image: linear-gradient(to bottom,
                             @theme_bg_color,
                             @theme_bg_color 50%,
@@ -847,25 +849,29 @@ GtkScrolledWindow GtkViewport.frame {
     box-shadow: none;
 }
 
-.header-bar .title,
-.titlebar .title {
+.titlebar.header-bar .title
+/*.header-bar .title,
+.titlebar .title*/ {
     color: shade(@theme_bg_color, 0.5);
     font-weight: bold;
     padding: 0 12px;
     text-shadow: 0 1px shade(@theme_bg_color, 1.3);
 }
 
-.header-bar .subtitle,
-.titlebar .subtitle {
+.titlebar.header-bar .subtitle
+/*.header-bar .subtitle,
+.titlebar .subtitle*/ {
     color: shade(@theme_bg_color, 0.5);
     font-size: smaller;
     padding: 0 12px;
 }
 
-.header-bar .title:backdrop,
+.titlebar.header-bar .title:backdrop,
+.titlebar.header-bar .subtitle:backdrop
+/*.header-bar .title:backdrop,
 .titlebar .title:backdrop,
 .header-bar .subtitle:backdrop,
-.titlebar .subtitle:backdrop {
+.titlebar .subtitle:backdrop*/ {
     color: shade(@theme_bg_color, 0.8);
     text-shadow: none;
 }
@@ -2120,8 +2126,10 @@ GtkTextView {
 }
 
 .primary-toolbar .toolbar,
-.primary-toolbar.toolbar {
+.primary-toolbar.toolbar,
+.header-bar {
     -GtkWidget-window-dragging: true;
+    padding: 6px;
     padding-top: 4px;
     padding-bottom: 5px;
     border-style: solid;
@@ -2132,7 +2140,8 @@ GtkTextView {
 }
 
 .primary-toolbar .toolbar:insensitive,
-.primary-toolbar.toolbar:insensitive {
+.primary-toolbar.toolbar:insensitive,
+.header-bar:insensitive {
     text-shadow: none;
 }
 
