@@ -1,4 +1,16 @@
-mint-themes-gtk3 (3.14+9) rosa; urgency=medium
+mint-themes-gtk3 (3.18+1) sarah; urgency=medium
+
+  [ JosephMcc ]
+  * srolled-window: Add support for over/undershoot and add theming for new style scrollbars. Could still use some tweaking but makes it useable.
+  * menus: Fix the appearance of menu separators
+  * Improve theming of list-row and add theming for sidebars
+  * completely rework border images for most widgets. Gtk now support much more complex css in some cases which allows ditching a lot of the image based borders. Doing so simplifies adding support for a lot of newer .vertical linked widgets
+  * Rework header bar styling so applications that move the header bar into the primary toolbar position, such as many ubuntu patched apps, get the proper theming
+  * add a missing hilight on primary toolbar insensitive buttons
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 15 Feb 2016 10:00:14 +0000
+
+mint-themes-gtk3 (3.14+9) betsy; urgency=medium
 
   [ Yan Pashkovsky ]
   * Minus tick is not bluury anymore
