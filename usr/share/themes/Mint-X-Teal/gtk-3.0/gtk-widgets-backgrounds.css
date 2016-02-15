@@ -16,6 +16,8 @@ GtkComboBox .button,
 
 .button.flat,
 .button.flat:insensitive,
+.sidebar-button.button,
+.sidebar-button.button:insensitive,
 .header-bar .titlebutton.button,
 .titlebar .titlebutton.button,
 .titlebar .titlebutton.button:hover,
@@ -168,7 +170,8 @@ GtkSwitch.slider:insensitive {
  ***********/
 
 .primary-toolbar .toolbar,
-.primary-toolbar.toolbar {
+.primary-toolbar.toolbar,
+.header-bar {
     background-color: transparent;
     background-image: linear-gradient(to bottom,
                             @toolbar_bg_a,
