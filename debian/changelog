@@ -1,3 +1,10 @@
+mint-themes-gtk3 (3.18+2) sarah; urgency=medium
+
+  [ JosephMcc ]
+  * 3.18: Make a few improvements to GtkTreeView progress bars and the ColorChooser dialog
+
+ -- Clement Lefebvre <root@linuxmint.com>  Thu, 03 Mar 2016 15:08:49 +0000
+
 mint-themes-gtk3 (3.18+1) sarah; urgency=medium
 
   [ JosephMcc ]
