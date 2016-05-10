@@ -1,3 +1,10 @@
+mint-themes-gtk3 (3.18+3) sarah; urgency=medium
+
+  [ JosephMcc ]
+  * reduce some over done shadow effects on menus and tooltips
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 10 May 2016 16:48:55 +0100
+
 mint-themes-gtk3 (3.18+2) sarah; urgency=medium
 
   [ JosephMcc ]
