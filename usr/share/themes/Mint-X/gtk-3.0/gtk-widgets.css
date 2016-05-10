@@ -508,6 +508,14 @@ GdMainIconView.content-view {
     box-shadow: 0 2px 5px 3px alpha(black, 0.3);
 }
 
+.window-frame.csd.popup {
+    box-shadow: 0 2px 3px alpha(black, 0.3);
+}
+
+.window-frame.csd.tooltip {
+    box-shadow: 0 2px 3px alpha(black, 0.3);
+}
+
 /****************
  * drawing area *
  ****************/
@@ -2138,7 +2146,8 @@ GtkTextView {
     border: 1px solid @border;
     border-radius: 4px;
     background-color: @theme_tooltip_bg_color;
-    color: @theme_tooltip_fg_color;    
+    color: @theme_tooltip_fg_color;
+    box-shadow: none;    
 }
 
 .tooltip * {
