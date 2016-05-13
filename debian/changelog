@@ -1,3 +1,10 @@
+mint-themes-gtk3 (3.18+4) sarah; urgency=medium
+
+  [ JosephMcc ]
+  * Reduce spacing between elements in the Firefox bookmarks toolbar
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 13 May 2016 09:59:02 +0100
+
 mint-themes-gtk3 (3.18+3) sarah; urgency=medium
 
   [ JosephMcc ]
