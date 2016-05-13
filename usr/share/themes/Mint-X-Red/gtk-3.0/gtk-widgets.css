@@ -115,6 +115,10 @@ GtkAssistant .sidebar {
     padding: 4px 16px;
 }
 
+.button.text-button.image-button {
+    padding: 4px 7px;
+}
+
 .header-bar .button,
 .header-bar .button.image-button,
 .header-bar.titlebar GtkMenuButton.button.titlebutton {
