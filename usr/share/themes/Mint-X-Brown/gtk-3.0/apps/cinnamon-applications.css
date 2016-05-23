@@ -144,3 +144,8 @@ NemoWindow .primary-toolbar.toolbar .entry {
                             @toolbar_bg_a,
                             @toolbar_bg_b);
 }
+
+.cs-category-view,
+.cs-category-view .view {
+    background-color: transparent;
+}
