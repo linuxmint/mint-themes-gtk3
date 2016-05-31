@@ -1,3 +1,10 @@
+mint-themes-gtk3 (3.18+5) sarah; urgency=medium
+
+  [ JosephMcc ]
+  * apps: Use the style class for the cinnamon settings category view
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 31 May 2016 10:00:59 +0100
+
 mint-themes-gtk3 (3.18+4) sarah; urgency=medium
 
   [ JosephMcc ]
