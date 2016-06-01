@@ -1,4 +1,11 @@
-mint-themes-gtk3 (3.14+9) rosa; urgency=medium
+mint-themes-gtk3 (3.14+10) betsy; urgency=medium
+
+  [ JosephMcc ]
+  * Reduce spacing between elements in the Firefox bookmarks toolbar
+
+ -- Clement Lefebvre <root@linuxmint.com>  Wed, 01 Jun 2016 12:02:36 +0100
+
+mint-themes-gtk3 (3.14+9) betsy; urgency=medium
 
   [ Yan Pashkovsky ]
   * Minus tick is not bluury anymore
