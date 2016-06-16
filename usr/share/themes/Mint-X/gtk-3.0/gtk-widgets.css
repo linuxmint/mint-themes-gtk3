@@ -542,6 +542,10 @@ GtkDrawingArea {
     color: @theme_text_color;
 }
 
+GtkTreeView.view .entry {
+    padding: 0;
+}
+
 .entry.image.left {
     padding-right: 6px;
 }
@@ -2190,11 +2194,6 @@ GtkTreeView.dnd {
 }
 
 GtkTreeView:selected:focus {
-}
-
-GtkTreeView .entry {
-    border-color: @theme_fg_color;
-    border-width: 1px;
 }
 
 GtkTreeView row:nth-child(even),
