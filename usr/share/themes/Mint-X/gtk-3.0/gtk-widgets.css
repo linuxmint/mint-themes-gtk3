@@ -171,6 +171,16 @@ GtkComboBox .button {
     icon-shadow: 0 1px @button_text_shadow;
 }
 
+.primary-toolbar .button.image-button.flat {
+    /*color: @theme_fg_color;*/
+    icon-shadow: 0 1px alpha(white, 0.4);
+    text-shadow: 0 1px alpha(white, 0.2);
+}
+
+.primary-toolbar .button.image-button.flat GtkLabel {
+    color: @theme_fg_color;
+}
+
 .primary-toolbar .button.image-button {
     color: #505050;
     icon-shadow: 0 1px alpha(white, 0.9);
@@ -183,7 +193,8 @@ GtkComboBox .button {
     icon-shadow: 0 1px alpha(white, 0.4);
 }
 
-.primary-toolbar .button.image-button:insensitive {
+.primary-toolbar .button.image-button:insensitive,
+.primary-toolbar .button.image-button:insensitive GtkLabel {
     color: @insensitive_fg_color;
     icon-shadow: none;
 }

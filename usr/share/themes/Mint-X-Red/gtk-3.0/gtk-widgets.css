@@ -171,6 +171,16 @@ GtkComboBox .button {
     icon-shadow: 0 1px @button_text_shadow;
 }
 
+.primary-toolbar .button.image-button.flat {
+    /*color: @theme_fg_color;*/
+    icon-shadow: 0 1px alpha(white, 0.4);
+    text-shadow: 0 1px alpha(white, 0.2);
+}
+
+.primary-toolbar .button.image-button.flat GtkLabel {
+    color: @theme_fg_color;
+}
+
 .primary-toolbar .button.image-button {
     color: #505050;
     icon-shadow: 0 1px alpha(white, 0.9);
@@ -183,7 +193,8 @@ GtkComboBox .button {
     icon-shadow: 0 1px alpha(white, 0.4);
 }
 
-.primary-toolbar .button.image-button:insensitive {
+.primary-toolbar .button.image-button:insensitive,
+.primary-toolbar .button.image-button:insensitive GtkLabel {
     color: @insensitive_fg_color;
     icon-shadow: none;
 }
@@ -540,6 +551,10 @@ GtkDrawingArea {
     background-clip: padding-box;
     padding: 4px;
     color: @theme_text_color;
+}
+
+GtkTreeView.view .entry {
+    padding: 0;
 }
 
 .entry.image.left {
@@ -1486,10 +1501,7 @@ GtkProgressBar {
 	padding: 0;
 }
 
-.progressbar,
-GtkTreeview.view.progressbar,
-GtkTreeView.view.progressbar:selected {
-    color: @theme_selected_fg_color;
+.progressbar {
     border: 1px solid @progressbar_border;
     border-radius: 3px;
     background-image: linear-gradient(to bottom,
@@ -1505,9 +1517,7 @@ GtkTreeView.view.progressbar:selected {
     box-shadow: 1px 0 alpha(white, 0.15);
 }
 
-.trough,
-GtkTreeView.view.trough,
-GtkTreeView.view.trough:selected {
+.trough {
     color: @theme_fg_color;
     padding: 0;
     border: 1px solid @border;
@@ -1521,6 +1531,28 @@ GtkTreeView.view.trough:selected {
     background-image: linear-gradient(to right,
                             @progressbar_trough_a,
                             @progressbar_trough_b); 
+}
+
+GtkTreeview.view.progressbar,
+GtkTreeView.view.progressbar:selected {
+    color: @theme_selected_fg_color;
+    border: 1px solid @progressbar_border;
+    border-radius: 3px;
+    background-image: linear-gradient(to bottom,
+                            @progressbar_a,
+                            @progressbar_b);
+    box-shadow: 0 1px alpha(white, 0.15);
+}
+
+GtkTreeView.view.trough,
+GtkTreeView.view.trough:selected {
+    color: @theme_fg_color;
+    padding: 0;
+    border: 1px solid @border;
+    border-radius: 3px;
+    background-image: linear-gradient(to bottom,
+                            @progressbar_trough_a,
+                            @progressbar_trough_b);
 }
 
 /*********
@@ -2173,11 +2205,6 @@ GtkTreeView.dnd {
 }
 
 GtkTreeView:selected:focus {
-}
-
-GtkTreeView .entry {
-    border-color: @theme_fg_color;
-    border-width: 1px;
 }
 
 GtkTreeView row:nth-child(even),
