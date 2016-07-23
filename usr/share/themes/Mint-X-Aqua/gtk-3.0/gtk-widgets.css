@@ -1252,6 +1252,8 @@ GtkTreeMenu .menuitem,
 .menuitem .accelerator {
     color: alpha(@theme_text_color, 0.6);
 }
+
+
 GtkModelMenuItem GtkBox GtkImage {
 }
 
