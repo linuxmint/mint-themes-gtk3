@@ -531,6 +531,17 @@ GdMainIconView.content-view {
     box-shadow: 0 2px 3px alpha(black, 0.3);
 }
 
+.window-frame.solid-csd {
+    border-radius: 0;
+    margin: 1px;
+    background-color: @theme_bg_color;
+    box-shadow: none;
+}
+
+.solid-csd .header-bar.titlebar {
+    border-radius: 0;
+}
+
 /****************
  * drawing area *
  ****************/
