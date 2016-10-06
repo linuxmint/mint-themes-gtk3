@@ -1234,11 +1234,30 @@ GtkTreeMenu .menuitem,
     color: mix(@menu_fg, @menu_bg, 0.6);
 }
 
-
 .menuitem .accelerator {
     color: alpha(@theme_text_color, 0.6);
 }
 
+.menu .menuitem:hover .accelerator,
+.menu .menuitem:active .accelerator {
+    color: alpha(@theme_selected_fg_color, 0.8);
+}
+
+.menu .menuitem GtkImage {
+    color: alpha(@theme_fg_color, 0.65);
+    icon-shadow: 0 1px white;
+}
+
+.menu .menuitem:active GtkImage,
+.menu .menuitem:hover GtkImage {
+    color: @theme_selected_fg_color;
+    icon-shadow: none;
+}
+
+.menu .menuitem:insensitive GtkImage {
+    color: alpha(@theme_fg_color, 0.3);
+    icon-shadow: none;
+}
 
 GtkModelMenuItem GtkBox GtkImage {
 }
