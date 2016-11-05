@@ -1,3 +1,11 @@
+mint-themes-gtk3 (3.18+9) serena; urgency=medium
+
+  [ JosephMcc ]
+  * menuitem: Tweak the color of symbolic menu item icons
+  * menuitem: Darken the color of images in menu items just a bit more
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 05 Nov 2016 15:14:47 +0000
+
 mint-themes-gtk3 (3.18+8) sarah; urgency=medium
 
   [ JosephMcc ]
