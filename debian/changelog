@@ -1,3 +1,10 @@
+mint-themes-gtk3 (3.18+10) serena; urgency=medium
+
+  [ JosephMcc ]
+  * infobars: Improve the infobar styling
+
+ -- Clement Lefebvre <root@linuxmint.com>  Fri, 09 Dec 2016 19:32:37 +0000
+
 mint-themes-gtk3 (3.18+9) serena; urgency=medium
 
   [ JosephMcc ]
