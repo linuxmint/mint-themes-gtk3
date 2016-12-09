@@ -943,28 +943,20 @@ GtkGrid:insensitive {
 .question,
 .warning,
 .error {
-    border-style: solid;
-    border-width: 0 0 1px 0;
-    border-radius: 0;
-    border-color: @border;
-    border-image: none;
+    border: none;
 }
 
 .info {
-    background-image: linear-gradient(to bottom,
-                            @info_color,
-                            shade(@info_color, 0.9));
+    background-color: @info_color;
 
 }
 
 .info GtkLabel {
-    color: @theme_text_color;
+    color: #ffffff;
 }
 
 .question {
-    background-image: linear-gradient(to bottom,
-                            @question_color,
-                            shade(@question_color, 0.9));
+    background-color: @question_color;
 }
 
 .question GtkLabel {
@@ -972,9 +964,7 @@ GtkGrid:insensitive {
 }
 
 .warning {
-    background-image: linear-gradient(to bottom,
-                            @warning_color,
-                            shade(@warning_color, 0.9));
+    background-color: @warning_color;
 }
 
 .warning GtkLabel {
@@ -982,13 +972,11 @@ GtkGrid:insensitive {
 }
 
 .error {
-    background-image: linear-gradient(to bottom,
-                            @error_color,
-                            shade(@error_color, 0.9));
+    background-color: @error_color;
 }
 
 .error GtkLabel {
-    color: #550000;
+    color: @theme_selected_fg_color;
 }
 
 GtkInfoBar .entry,
