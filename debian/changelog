@@ -1,3 +1,9 @@
+mint-themes-gtk3 (3.18+11) serena; urgency=medium
+
+  * Infobar: Fix button label colors
+
+ -- Clement Lefebvre <root@linuxmint.com>  Sat, 10 Dec 2016 13:53:45 +0000
+
 mint-themes-gtk3 (3.18+10) serena; urgency=medium
 
   [ JosephMcc ]
