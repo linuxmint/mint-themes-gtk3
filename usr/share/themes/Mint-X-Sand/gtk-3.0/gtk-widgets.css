@@ -984,6 +984,11 @@ GtkInfoBar .menu {
     color: @text_color;
 }
 
+.info GtkButton GtkLabel,
+.error GtkButton GtkLabel {
+    color: @theme_fg_color;
+}
+
 /*************
  * level bar *
  *************/
