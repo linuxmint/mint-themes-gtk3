@@ -3,8 +3,8 @@
  *************/
 
 GtkHTML {
-    background-color: @theme_base_color;
-    color: @theme_fg_color;
+    background-color: @mint_theme_base_color;
+    color: @mint_theme_fg_color;
 }
 
 GtkHTML:active {
@@ -38,7 +38,7 @@ GtkFileChooser .search-bar {
  *************/
 
 GucharmapChartable {
-    background-color: shade(@theme_base_color, 0.98);
+    background-color: shade(@mint_theme_base_color, 0.98);
 }
 
 GucharmapChartable:active,
@@ -80,7 +80,7 @@ TerminalWindow GtkNotebook.notebook {
 .nautilus-desktop.nautilus-canvas-item:active {
     background-color: @desktop_item_selected_fg;
     background-image: none;
-    color: @theme_fg_color;
+    color: @mint_theme_fg_color;
 }
 
 .nautilus-desktop.nautilus-canvas-item:selected {
