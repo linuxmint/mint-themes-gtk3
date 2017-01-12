@@ -51,7 +51,7 @@
 
 .background {
     background-color: @theme_bg_color;
-    color: @mint_theme_fg_color;
+    color: @theme_fg_color;
 }
 
 *:selected,
@@ -87,7 +87,7 @@
  
 GtkAssistant .sidebar .highlight {
     background-color: transparent;
-    color: @mint_theme_fg_color;
+    color: @theme_fg_color;
     font: bold;
 }
 
@@ -95,8 +95,8 @@ GtkAssistant .sidebar {
     padding: 12px;
     border: 1px solid @border;
     border-radius: 2px;
-    background-color: @mint_theme_base_color;
-    color: mix(@mint_theme_fg_color, @theme_bg_color, 0.4);
+    background-color: @theme_base_color;
+    color: mix(@theme_fg_color, @theme_bg_color, 0.4);
 }
 
 /**********
@@ -220,7 +220,7 @@ GtkCalendar.view {
     padding: 2px;
     border: 1px solid @border;
     border-radius: 3px;
-    background-color: @mint_theme_base_color;
+    background-color: @theme_base_color;
     background-image: none;
 }
 
@@ -228,8 +228,8 @@ GtkCalendar.header {
     border-width: 0;
     border-radius: 0;
     background-image: linear-gradient(to bottom,
-                            shade(@mint_theme_base_color, 1.04),
-                            shade(@mint_theme_base_color, 0.89));
+                            shade(@theme_base_color, 1.04),
+                            shade(@theme_base_color, 0.89));
 }
 
 GtkCalendar.button,
@@ -373,14 +373,14 @@ GtkColorChooserWidget #add-color-button {
     background-clip: padding-box;
     border-color: mix(@border, @theme_bg_color, 0.3);
     background-color: mix(@border, @theme_bg_color, 0.3);
-    color: @mint_theme_base_color;
+    color: @theme_base_color;
     box-shadow: none;
 }
 
 GtkColorChooserWidget #add-color-button:hover {
     border-color: @border;
     background-color: @border;
-    color: @mint_theme_base_color;
+    color: @theme_base_color;
 }
 
 .color-active-badge,
@@ -418,7 +418,7 @@ GtkColorEditor GtkColorSwatch.color-light:hover {
 column-header.button,
 column-header .button {
     padding: 4px 6px;
-    color: @mint_theme_fg_color;
+    color: @theme_fg_color;
     text-shadow: none;
     icon-shadow: none;
 }
@@ -475,7 +475,7 @@ GtkComboBox.combobox-entry .button:last-child {
  ****************/
  
 .content-view.view {
-    background-color: @mint_theme_base_color;
+    background-color: @theme_base_color;
 }
 
 .content-view.view:insensitive {
@@ -626,15 +626,15 @@ GtkDrawingArea {
  ************/
 
 .expander {
-    color: @mint_theme_fg_color;
+    color: @theme_fg_color;
 }
 
 .expander:active {
-    color: @mint_theme_fg_color;
+    color: @theme_fg_color;
 }
 
 .expander:hover {
-    color: @mint_theme_fg_color;
+    color: @theme_fg_color;
 }
 
 .expander row:selected,
@@ -661,7 +661,7 @@ PanelAppletFrame,
 PanelApplet {
     background-color: @theme_bg_color;
     background-image: none;
-    color: @mint_theme_fg_color;
+    color: @theme_fg_color;
 }
 
 ClockBox,
@@ -710,7 +710,7 @@ NaTrayApplet {
 GsmFailWhaleDialog {
     background-color: @theme_bg_color;
     background-image: none;
-    color: @mint_theme_fg_color;
+    color: @theme_fg_color;
 }
 
 GsmFailWhaleDialog .button,
@@ -804,22 +804,22 @@ GtkScrolledWindow GtkViewport.frame {
 
 .gtkstyle-fallback {
     background-color: @theme_bg_color;
-    color: @mint_theme_fg_color;
+    color: @theme_fg_color;
 }
 
 .gtkstyle-fallback:prelight {
     background-color: shade(@theme_bg_color, 1.1);
-    color: @mint_theme_fg_color;
+    color: @theme_fg_color;
 }
 
 .gtkstyle-fallback:active {
     background-color: shade(@theme_bg_color, 0.9);
-    color: @mint_theme_fg_color;
+    color: @theme_fg_color;
 }
 
 .gtkstyle-fallback:insensitive {
     background-color: shade(shade(@theme_bg_color, 0.95), 1.05);
-    color: mix(@mint_theme_fg_color, @theme_bg_color, 0.4);
+    color: mix(@theme_fg_color, @theme_bg_color, 0.4);
 }
 
 .gtkstyle-fallback:selected {
@@ -921,7 +921,7 @@ GtkGrid:insensitive {
 
 .view.dim-label,
 .dim-label {
-    color: alpha(@mint_theme_fg_color, 0.6);
+    color: alpha(@theme_fg_color, 0.6);
 }
 
 .dim-label:selected,
@@ -1010,7 +1010,7 @@ GtkLevelBar.vertical {
 
 .level-bar.fill-block {
     background-color: #eaab28;
-    border: 1px solid alpha(@mint_theme_fg_color, 0.1);
+    border: 1px solid alpha(@theme_fg_color, 0.1);
     background-image: none;
 }
 
@@ -1029,18 +1029,18 @@ GtkLevelBar.vertical {
 
 .level-bar.fill-block.level-high {
     background-color: #4e9a06;
-    border-color: alpha(@mint_theme_fg_color, 0.1);
+    border-color: alpha(@theme_fg_color, 0.1);
     background-image: none;
 }
 
 .level-bar.fill-block.level-low {
     background-color: #db3805;
-    border: 1px solid alpha(@mint_theme_fg_color, 0.1);
+    border: 1px solid alpha(@theme_fg_color, 0.1);
     background-image: none;
 }
 
 .level-bar.fill-block.empty-fill-block {
-    border-color: alpha(@mint_theme_fg_color, 0.1);
+    border-color: alpha(@theme_fg_color, 0.1);
     background-color: transparent;
     background-image: none;
 }
@@ -1064,7 +1064,7 @@ GtkLevelBar.vertical {
  **************/
 .list,
 .list-row {
-    background-color: @mint_theme_base_color;
+    background-color: @theme_base_color;
 }
 
 .list-row.button {
@@ -1080,14 +1080,14 @@ GtkLevelBar.vertical {
 }
 
 .list-row.button:hover {
-    background-color: shade(@mint_theme_base_color, 0.95);
+    background-color: shade(@theme_base_color, 0.95);
     background-image: none;
 }
 
 .list-row.button:active:hover {
     border-image: none;
     border-color: transparent;
-    background-color: shade(@mint_theme_base_color, 0.9);
+    background-color: shade(@theme_base_color, 0.9);
     background-image: none;
     box-shadow: inset 0 2px 2px -2px alpha(black, 0.2);
 }
@@ -1389,7 +1389,7 @@ GtkModelMenuItem GtkBox GtkImage {
     border-image: none;
     background-color: transparent;
     background-image: none;
-    color: shade(@mint_theme_fg_color, 0.85);
+    color: shade(@theme_fg_color, 0.85);
     icon-shadow: none;
     box-shadow: none;
 }
@@ -1450,7 +1450,7 @@ GtkOverlay.osd {
 
 .pane-separator {
     background-color: transparent;
-    color: @mint_theme_fg_color;
+    color: @theme_fg_color;
 }
 
 .grip {
@@ -1570,12 +1570,12 @@ GtkProgressBar {
 }
 
 .trough row {
-    color: @mint_theme_fg_color;
+    color: @theme_fg_color;
 }
 
 .trough row:selected,
 .trough row:selected:focus {
-    color: @mint_theme_fg_color;
+    color: @theme_fg_color;
 }
 
 /*********
@@ -1709,14 +1709,14 @@ GtkProgressBar {
 .scrollbar.trough.vertical {
     background-image: linear-gradient(to right,
                             @theme_bg_color,
-                            @mint_theme_base_color);
+                            @theme_base_color);
 }
 
 .scrollbar.trough.horizontal {
     border-width: 1px 0 0 0;
     background-image: linear-gradient(to bottom,
                             @theme_bg_color,
-                            @mint_theme_base_color);
+                            @theme_base_color);
 }
 
 .scrollbars-junction,
@@ -1975,7 +1975,7 @@ GtkStatusbar {
     -GtkStatusbar-shadow-type: none;
 
     padding: 1px;
-    color: @mint_theme_fg_color;
+    color: @theme_fg_color;
 }
 
 /**********
@@ -2033,7 +2033,7 @@ GtkSwitch.slider {
  ************/
 
 GtkTextView {
-    background-color: @mint_theme_base_color;
+    background-color: @theme_base_color;
     color: @theme_text_color;
 }
 
@@ -2059,7 +2059,7 @@ GtkTextView {
     border-style: solid;
     border-width: 0 0 1px 0;
     border-color: @border;
-    color: @mint_theme_fg_color;
+    color: @theme_fg_color;
     text-shadow: 0 1px @button_text_shadow;
 }
 
@@ -2126,13 +2126,13 @@ GtkTreeView:selected:focus {
 }
 
 GtkTreeView .entry {
-    border-color: @mint_theme_fg_color;
+    border-color: @theme_fg_color;
     border-width: 1px;
 }
 
 GtkTreeView row:nth-child(even),
 GtkTreeView row:nth-child(odd) {
-    background-color: @mint_theme_base_color;
+    background-color: @theme_base_color;
 }
 
 /************
@@ -2144,7 +2144,7 @@ GtkViewport {
 }
 
 .view {
-    background-color: @mint_theme_base_color;
+    background-color: @theme_base_color;
     color: @theme_text_color;
 }
 
@@ -2155,6 +2155,6 @@ GtkViewport {
 }
 
 .view:insensitive {
-    background-color: shade(@mint_theme_base_color, 0.95);
+    background-color: shade(@theme_base_color, 0.95);
     color: shade(@insensitive_fg_color, 1.3);
 }

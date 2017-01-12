@@ -114,7 +114,7 @@ column-header.button {
  *********/
 
 .entry {
-    background-color: @mint_theme_base_color;
+    background-color: @theme_base_color;
     background-image: linear-gradient(to bottom,
                             @entry_bg_a,
                             @entry_bg_b);

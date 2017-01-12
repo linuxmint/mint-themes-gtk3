@@ -1,32 +1,20 @@
 /* Default Color Scheme */
 
 @define-color theme_bg_color #d6d6d6;
-@define-color mint_theme_fg_color #212121;
-@define-color mint_theme_base_color #f7f7f7;
+@define-color theme_fg_color #212121;
+@define-color theme_base_color #f7f7f7;
 @define-color theme_text_color #212121;
 @define-color theme_selected_bg_color #c15b58;
 @define-color theme_selected_fg_color #f5f5f5;
 @define-color theme_tooltip_bg_color #fbeaa0;
 @define-color theme_tooltip_fg_color #212121;
 
-/* MATE Terminal
-
-mate-terminal doesn't properly apply its style with GTK 3.14
-instead, it reads theme_base_color and theme_fg_color,
-so we define these here and we don't use them anywhere
-else in the theme.
-
-*/
-
-@define-color theme_fg_color #ffffff;
-@define-color theme_base_color #3c3c3c;
-
 /* Misc Colors */
 
 @define-color insensitive_fg_color shade(@theme_bg_color, 0.6);
 @define-color border shade(@theme_bg_color, 0.7);
-@define-color internal_element_color shade(@mint_theme_fg_color, 0.7);
-@define-color internal_element_prelight shade(@mint_theme_fg_color, 0.9);
+@define-color internal_element_color shade(@theme_fg_color, 0.7);
+@define-color internal_element_prelight shade(@theme_fg_color, 0.9);
 
 /* Buttons */
 
@@ -56,22 +44,22 @@ else in the theme.
 @define-color button_insensitive_active_bg_a shade(@theme_bg_color, 0.78);
 @define-color button_insensitive_active_bg_b shade(@theme_bg_color, 0.9);
 
-@define-color column_header_bg_a @mint_theme_base_color;
-@define-color column_header_bg_b shade(@mint_theme_base_color, 0.96);
+@define-color column_header_bg_a @theme_base_color;
+@define-color column_header_bg_b shade(@theme_base_color, 0.96);
 @define-color column_header_bg_c @theme_bg_color;
 
-@define-color button_fg @mint_theme_fg_color;
+@define-color button_fg @theme_fg_color;
 @define-color button_text_shadow alpha(white, 0.4);
 
 /* Entry */
 
-@define-color entry_bg_a shade(@mint_theme_base_color, 0.94);
-@define-color entry_bg_b @mint_theme_base_color;
+@define-color entry_bg_a shade(@theme_base_color, 0.94);
+@define-color entry_bg_b @theme_base_color;
 
 /* Menus */
 
-@define-color menu_bg @mint_theme_base_color;
-@define-color menu_fg @mint_theme_fg_color;
+@define-color menu_bg @theme_base_color;
+@define-color menu_fg @theme_fg_color;
 
 /* Notebooks */
 
@@ -124,7 +112,7 @@ else in the theme.
 
 @define-color floating_bar_a shade(@theme_bg_color, 1.2);
 @define-color floating_bar_b shade(@theme_bg_color, 0.9);
-@define-color sidebar_bg shade(@mint_theme_base_color, 0.95);
+@define-color sidebar_bg shade(@theme_base_color, 0.95);
 
 @import url("gtk-main-common.css");
 @import url("gtk-widgets.css");
