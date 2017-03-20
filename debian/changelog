@@ -1,3 +1,9 @@
+mint-themes-gtk3 (3.18+12) sonya; urgency=medium
+
+  * Add support for unity-greeter and lightdm-gtk-greeter
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 20 Mar 2017 16:09:02 +0000
+
 mint-themes-gtk3 (3.18+11) serena; urgency=medium
 
   * Infobar: Fix button label colors
