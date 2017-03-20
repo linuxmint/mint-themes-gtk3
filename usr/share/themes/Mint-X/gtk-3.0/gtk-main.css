@@ -124,3 +124,5 @@
 @import url("apps/gnome-applications.css");
 @import url("apps/cinnamon-applications.css");
 @import url("apps/ubiquity.css");
+@import url("apps/lightdm-gtk-greeter.css");
+@import url("apps/lightdm-unity-greeter.css");

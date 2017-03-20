@@ -1,0 +1,96 @@
+.lightdm.menu {
+    background-image: none;
+    background-color: alpha(red, 0.6);
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    padding: 5px;
+    color: white;
+}
+
+.lightdm-combo .menu {
+    background-color: alpha(black, 0.0);
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 0px;
+    padding: 5px;
+    color: white;
+}
+
+.lightdm.menu .menuitem *,
+.lightdm.menu .menuitem.check:active,
+.lightdm.menu .menuitem.radio:active {
+    color: white;
+}
+
+.lightdm.menubar {
+    background-image: none;
+    background-color: alpha(black, 0.5);
+}
+
+.lightdm-combo .cell,
+.lightdm-combo .button,
+.lightdm-combo.combobox-entry .button,
+.lightdm-combo .entry,
+.lightdm.button {
+    background-image: none;
+    background-color: alpha(white, 0.0);
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    padding: 2px;
+    color: white;
+    text-shadow: none;
+}
+
+.lightdm.entry {
+    background-image: none;
+    background-color: #f6f6f6;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    padding: 2px;
+    color: #3c3c3c;
+    text-shadow: none;
+}
+
+.lightdm.button,
+.lightdm.button:hover,
+.lightdm.button:active,
+.lightdm.button:active:focus,
+.lightdm.entry,
+.lightdm.entry:hover,
+.lightdm.entry:active,
+.lightdm.entry:active:focus {
+    background-image: none;
+}
+
+.lightdm.button {
+    border-color: rgba(0, 0, 0, 0);
+    color: #3c3c3c;
+}
+
+.lightdm.button:focus {
+    border-color: rgba(0, 0, 0, 0);
+    border-size: 0px;
+    color: #f6f6f6;
+}
+
+.lightdm.button:active,
+.lightdm.button:active:focus,
+ {
+    border-color: rgba(0, 0, 0, 0);
+    color: #ff0000;
+}
+
+
+
+.lightdm.entry:focus {
+    border-color: alpha(#9ab87c, 0.9);
+    color: #3c3c3c;
+}
+
+@keyframes dashentry_spinner {
+    to { -gtk-icon-transform: rotate(1turn); }
+}
+
+.lightdm.entry:active {
+    -gtk-icon-source: -gtk-icontheme("process-working-symbolic");
+    animation: dashentry_spinner 1s infinite linear;
+}
