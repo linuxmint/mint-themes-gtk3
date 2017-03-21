@@ -1,3 +1,9 @@
+mint-themes-gtk3 (3.18+13) sonya; urgency=medium
+
+  * Update theming for unity-greeter
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 21 Mar 2017 17:40:04 +0000
+
 mint-themes-gtk3 (3.18+12) sonya; urgency=medium
 
   * Add support for unity-greeter and lightdm-gtk-greeter
