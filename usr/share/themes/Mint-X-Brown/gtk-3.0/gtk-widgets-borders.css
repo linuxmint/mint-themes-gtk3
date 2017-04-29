@@ -6,7 +6,8 @@
 .button,
 .button.flat:hover,
 .inline-toolbar GtkToolButton > .button,
-.inline-toolbar GtkToolButton > .button.flat {
+.inline-toolbar GtkToolButton > .button.flat,
+.mate-panel-menu-bar .button:hover {
     border: 1px solid shade(@button_border, 0.95);
     border-top-color: @button_border;
     border-bottom-color: shade(@button_border, 0.9);
@@ -23,7 +24,8 @@
 .button.flat,
 .sidebar-button.button,
 .button.flat:insensitive,
-.sidebar-button.button:insensitive {
+.sidebar-button.button:insensitive,
+.mate-panel-menu-bar .button {
     border-color: transparent;
     border-image: none;
     box-shadow: none;
@@ -36,7 +38,9 @@
 .inline-toolbar GtkToolButton > .button:active,
 .inline-toolbar GtkToolButton > .button:checked,
 .inline-toolbar GtkToolButton > .button.flat:active,
-.inline-toolbar GtkToolButton > .button.flat:checked {
+.inline-toolbar GtkToolButton > .button.flat:checked,
+.mate-panel-menu-bar .button:active,
+.mate-panel-menu-bar .button:checked {
     border: 1px solid shade(@button_border, 0.95);
     border-top-color: @button_border;
     border-bottom-color: shade(@button_border, 0.9);
