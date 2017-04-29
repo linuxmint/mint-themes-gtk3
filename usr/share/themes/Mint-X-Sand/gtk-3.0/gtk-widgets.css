@@ -698,6 +698,15 @@ PanelApplet > GtkMenuBar.menubar .menuitem *:hover {
     color: @theme_selected_fg_color;
 }
 
+.mate-panel-menu-bar .button {
+    margin: 2px;
+    padding: 0px 3px 0px 3px;
+}
+
+PanelSeparator {
+    color: shade(@theme_bg_color, 0.75);
+}
+
 WnckPager {
     background-color: lighter(@theme_bg_color);
 }

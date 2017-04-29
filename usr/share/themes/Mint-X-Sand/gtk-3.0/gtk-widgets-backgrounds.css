@@ -7,7 +7,8 @@
 GtkComboBox .button,
 .header-bar GtkComboBox .button,
 .header-bar.titlebar GtkMenuButton.button.titlebutton:hover,
-.inline-toolbar GtkToolButton > .button {
+.inline-toolbar GtkToolButton > .button,
+.mate-panel-menu-bar .button:hover {
     background-color: transparent;
     background-image: linear-gradient(to bottom,
                             @button_bg_a,
@@ -21,7 +22,8 @@ GtkComboBox .button,
 .titlebar .titlebutton.button:hover,
 .titlebar .titlebutton.button:active,
 .titlebar .titlebutton.button:checked,
-.header-bar.titlebar GtkMenuButton.button.titlebutton {
+.header-bar.titlebar GtkMenuButton.button.titlebutton,
+.mate-panel-menu-bar .button {
     background-color: transparent;
     background-image: none;
 }
