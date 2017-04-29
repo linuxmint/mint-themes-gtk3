@@ -703,8 +703,7 @@ WnckPager {
 }
 
 NaTrayApplet {
-    -NaTrayApplet-icon-padding: 12;
-    -NaTrayApplet-icon-size: 16;
+    -NaTrayApplet-icon-padding: 1px;
 }
 
 GsmFailWhaleDialog {
