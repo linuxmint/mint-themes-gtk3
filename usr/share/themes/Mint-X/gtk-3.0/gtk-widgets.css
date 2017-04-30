@@ -47,6 +47,9 @@
     -GtkWindow-resize-grip-height: 0
 
     -WnckTasklist-fade-overlay-rect: 0;
+
+    background-color: @theme_bg_color;
+    color: @theme_fg_color;
 }
 
 .background {
