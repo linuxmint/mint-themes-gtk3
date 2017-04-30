@@ -667,7 +667,7 @@ PanelApplet {
 ClockBox,
 .gnome-panel-menu-bar.menubar,
 PanelApplet > GtkMenuBar.menubar {
-    font: bold;
+    font: regular;
 }
 
 .gnome-panel-menu-bar.menubar .menuitem *:hover,
