@@ -1,0 +1,40 @@
+@define-color caja_sidebar_bg #505050;
+@define-color caja_sidebar_fg #fff;
+@define-color caja_sidebar_selected_fg #fff;
+
+/****************
+ * Caja desktop *
+ ****************/
+
+.caja-canvas-item {
+    border-radius: 3px;
+}
+
+.caja-desktop.caja-canvas-item {
+    color: @desktop_item_fg;
+    text-shadow: 1px 1px @desktop_item_text_shadow;
+}
+
+.caja-desktop.caja-canvas-item:selected {
+    background-color: alpha(@theme_selected_bg_color, 0.8);
+    background-image: none;
+    color: @theme_selected_fg_color;
+    text-shadow: none;
+}
+
+/********
+ * Caja *
+ ********/
+
+/* caja sidebar */
+CajaWindow FMTreeView .view,
+CajaWindow CajaNotesViewer .view,
+CajaWindow CajaPlacesSidebar .view,
+CajaWindow CajaHistorySidebar .view,
+CajaWindow CajaInformationPanel GtkVBox,
+CajaWindow CajaEmblemSidebar GtkViewport {
+    background-color: @caja_sidebar_bg;
+    color: @caja_sidebar_fg;
+    border-width: 0px;
+}
+
