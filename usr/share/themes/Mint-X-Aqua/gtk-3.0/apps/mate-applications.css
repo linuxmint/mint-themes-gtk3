@@ -42,6 +42,9 @@ CajaWindow CajaEmblemSidebar GtkViewport {
  * Mate-Panel *
  ****************/
 
+mintmenu:selected GtkBox{
+    background-color: @theme_selected_bg_color;
+}
 
 /*Wncklist */
 WnckTasklist .button.flat {
