@@ -1,3 +1,22 @@
+mint-themes-gtk3 (3.14+13) betsy; urgency=medium
+
+  [ JosephMcc ]
+  * mate-panel: Fix the spacing of icons in the system tray
+
+  [ monsta ]
+  * mate-panel: don't make clock applet font bold
+
+  [ JosephMcc ]
+  * mate-panel: Add some more fixes for gtk3
+
+  [ Clement Lefebvre ]
+  * Fix caja styling (canvas and sidebar)
+  * Fix mate-panel styling (window-list and separators)
+  * mate-panel: Better fix for window list
+  * mate-panel: Color mintmenu bg when active
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 01 May 2017 19:39:47 +0100
+
 mint-themes-gtk3 (3.14+12) betsy; urgency=medium
 
   * Revert "Fix mate-terminal in GTK 3.14"
