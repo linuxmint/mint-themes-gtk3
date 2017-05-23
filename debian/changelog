@@ -1,3 +1,10 @@
+mint-themes-gtk3 (3.18+15) sonya; urgency=medium
+
+  [ JosephMcc ]
+  * Fix the wrong color of some icons in the pix toolbar
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 23 May 2017 15:17:33 +0100
+
 mint-themes-gtk3 (3.18+14) sonya; urgency=medium
 
   [ JosephMcc ]
