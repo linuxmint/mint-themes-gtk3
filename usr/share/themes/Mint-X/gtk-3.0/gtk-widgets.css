@@ -181,7 +181,8 @@ GtkComboBox .button {
     color: @theme_fg_color;
 }
 
-.primary-toolbar .button.image-button {
+.primary-toolbar .button.image-button,
+.primary-toolbar .button GtkImage {
     color: #505050;
     icon-shadow: 0 1px alpha(white, 0.9);
 }
