@@ -28,6 +28,7 @@
 }
 
 .lightdm.button {
+    border: 1px solid;
     background-image: none;
     background-color: alpha (black, 0.3);
     border-color: alpha (white, 0.6);
@@ -101,12 +102,12 @@
 .lightdm.option-button {
     padding: 2px;
     background: none;
-    border: 0;
+    border-color: transparent;
 }
 
 .lightdm.toggle-button {
     background: none;
-    border-width: 0;
+    border-color: transparent;
 }
 
 .lightdm.toggle-button.selected {
