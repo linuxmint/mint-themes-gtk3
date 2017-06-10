@@ -1190,7 +1190,8 @@ GtkMenuButton .menu {
  ************/
 
 GtkTreeMenu .menuitem,
-.menu .menuitem {
+.menu .menuitem,
+.menu .menuitem > .label {
     -GtkMenuItem-arrow-scaling: 0.5;
     color: @menu_fg;
 }
@@ -1219,7 +1220,7 @@ GtkTreeMenu .menuitem,
     border: 1px solid shade(@border, 0.9);
     background-image: linear-gradient(to bottom,
                             @theme_selected_bg_color,
-                            shade(@theme_selected_bg_color, 0.85)); 
+                            shade(@theme_selected_bg_color, 0.85));
 }
 
 .menu .menuitem:insensitive {
@@ -1228,20 +1229,24 @@ GtkTreeMenu .menuitem,
 }
 
 .menu .menuitem:active,
-.menu .menuitem:hover {
+.menu .menuitem:active > .label,
+.menu .menuitem:hover,
+.menu .menuitem:hover > .label {
     color: @theme_selected_fg_color;
 }
 
-.menu .menuitem:insensitive {
+.menu .menuitem:insensitive,
+.menu .menuitem:insensitive .label {
     color: mix(@menu_fg, @menu_bg, 0.6);
 }
 
-.menuitem .accelerator {
+.menuitem > .label .accelerator,
+.menu .menuitem > .label .accelerator {
     color: alpha(@theme_text_color, 0.6);
 }
 
-.menu .menuitem:hover .accelerator,
-.menu .menuitem:active .accelerator {
+.menu .menuitem:hover > .label .accelerator,
+.menu .menuitem:active > .label .accelerator {
     color: alpha(@theme_selected_fg_color, 0.8);
 }
 
