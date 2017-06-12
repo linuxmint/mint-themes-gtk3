@@ -1,3 +1,11 @@
+mint-themes-gtk3 (3.18+16) sonya; urgency=medium
+
+  [ JosephMcc ]
+  * Fix some buttons jumping around when hovering in slick greeter
+  * Use more explicit selectors in menuitems
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 12 Jun 2017 16:26:50 +0100
+
 mint-themes-gtk3 (3.18+15) sonya; urgency=medium
 
   [ JosephMcc ]
