@@ -1,3 +1,10 @@
+mint-themes-gtk3 (3.18+17) sonya; urgency=medium
+
+  [ JosephMcc ]
+  * Properly support Mate's panel trasparency settings
+
+ -- Clement Lefebvre <root@linuxmint.com>  Tue, 13 Jun 2017 10:55:41 +0100
+
 mint-themes-gtk3 (3.18+16) sonya; urgency=medium
 
   [ JosephMcc ]
